@@ -364,7 +364,6 @@ export {
   bigProjects,
   achievementSection,
   blogSection,
-  talkSection,
   contactInfo,
   isHireable,
   resumeSection
