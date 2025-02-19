@@ -43,7 +43,7 @@ export default function Contact() {
               )}
               <a
                 className="contact-detail-email"
-                href={"mailto:" + contactInfo.email_address}
+                href={"email:" + contactInfo.email_address}
               >
                 {contactInfo.email_address}
               </a>

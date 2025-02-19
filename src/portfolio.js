@@ -20,7 +20,7 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
+  username: "Yosra El mimouni",
   title: "Hi all, I'm yosra",
   subTitle: emoji(
     "Passionate about software engineering, AI, and full-stack development, I transform ideas into intelligent and efficient solutions. With expertise in Python, Java, C++, and JavaScript, I craft seamless applications using FastAPI, Spring Boot, and JEE. Always curious and driven by innovation, I love turning challenges into opportunities to create, optimize, and inspire. 🚀✨"
@@ -33,7 +33,7 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
+  github: "https://github.com/yosraElmimouni",
   linkedin: "https://www.linkedin.com/in/yosra-el-mimouni-5a40b12a3/",
   gmail: "yosraelmimouni@gmail.com",
   gitlab: "https://gitlab.com/yosraelmimouni2003",
@@ -174,17 +174,6 @@ const workExperiences = {
         "Automatisation du processus d’analyse des performances du bot avec Python et Power BI",
         "Mise en place d’API pour l’intégration des outils dans un environnement existant"
       ]
-    },
-    {
-      role: "Responsable de la cellule d'activité",
-      company: "Comité Masjid",
-      companylogo: require("./assets/images/masjidLogo.png"), // Ajoute le logo du comité
-      date: "2022",
-      desc: "Organisation et gestion des activités communautaires au sein du comité.",
-      descBullets: [
-        "Coordination d’événements et d’initiatives locales",
-        "Gestion des ressources et des participants pour assurer le bon déroulement des activités"
-      ]
     }
   ]
 };
@@ -281,7 +270,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: "#" // Ajoute le lien vers la certification
+          url: "https://www.dropbox.com/scl/fi/8ivo4frr68e6rn4ksikvd/CertificateOfCompletion_Preparer-votre-carriere-dans-lIA-generative-par-Microsoft-et-LinkedIn-1.pdf?rlkey=bcp3nsvbu4x6xlrx3gd95a81c&st=51w6lq1z&dl=0" // Ajoute le lien vers la certification
         }
       ]
     },
@@ -294,7 +283,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: "#" // Ajoute le lien si disponible
+          url: "https://www.dropbox.com/scl/fi/gqhdwqkazu6tv3trysigw/yosra-el-mimouni.png?rlkey=u15svg6ck9i7f3ex6cblzzumr&st=oue0fxv5&dl=0" // Ajoute le lien si disponible
         }
       ]
     },
@@ -307,7 +296,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: "#" // Ajoute le lien vers ta certification
+          url: "https://www.dropbox.com/scl/fi/cbki3js10io6v4khlg86v/7408555977YE.pdf?rlkey=1p6mykk0zecxvbmbtmoononi0&st=ew606n69&dl=0" // Ajoute le lien vers ta certification
         }
       ]
     },
@@ -320,11 +309,11 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification Python",
-          url: "#" // Ajoute le lien vers ta certification Python
+          url: "https://www.dropbox.com/scl/fi/l9vaz5ld953fgdwyc9wox/4991861690YE.pdf?rlkey=kqdlmfm67t3eu3gicu7npfx1b&st=ljrhjih8&dl=0" // Ajoute le lien vers ta certification Python
         },
         {
           name: "Certification C++",
-          url: "#" // Ajoute le lien vers ta certification C++
+          url: "https://www.dropbox.com/scl/fi/ts6nez7yk8ed1w8rt9y44/6383804297YE.pdf?rlkey=mvktp9p19yogui46zntae71y2&st=k28n601n&dl=0" // Ajoute le lien vers ta certification C++
         }
       ]
     }
@@ -335,57 +324,12 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Partage & Apprentissage",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
+    "Passionnée par l'intelligence artificielle et le développement logiciel, je compte bientôt partager mes expériences et découvertes à travers des articles et tutoriels.",
+  displayMediumBlogs: false, // Désactivé pour l'instant, à activer si tu publies sur Medium
+  blogs: [],
+  display: true // La section reste visible pour montrer ton intention de partager du contenu
 };
 
 // Resume Section
@@ -398,18 +342,11 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Me Contacter 📩"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
-};
-
-// Twitter Section
-
-const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+    "Une question, une collaboration ou juste envie d’échanger ? N’hésitez pas à me contacter !",
+  number: "+212-675632773",
+  email_address: "yosraelmimouni@gmail.com"
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
@@ -428,9 +365,7 @@ export {
   achievementSection,
   blogSection,
   talkSection,
-  podcastSection,
   contactInfo,
-  twitterDetails,
   isHireable,
   resumeSection
 };
