@@ -348,7 +348,7 @@ const contactInfo = {
   number: "+212-675632773",
   email_address: "yosraelmimouni@gmail.com"
 };
-
+export const talkSection = {} ;
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
