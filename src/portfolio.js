@@ -350,6 +350,8 @@ const contactInfo = {
 };
 export const talkSection = {} ;
 export const podcastSection = {} ;
+export const twitterDetails = {} ;
+
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
