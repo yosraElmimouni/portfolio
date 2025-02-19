@@ -21,12 +21,12 @@ const illustration = {
 
 const greeting = {
   username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  title: "Hi all, I'm yosra",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-  ),
+    "Passionate about software engineering, AI, and full-stack development, I transform ideas into intelligent and efficient solutions. With expertise in Python, Java, C++, and JavaScript, I craft seamless applications using FastAPI, Spring Boot, and JEE. Always curious and driven by innovation, I love turning challenges into opportunities to create, optimize, and inspire. 🚀✨"
+    ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://www.dropbox.com/scl/fi/fsyutycg6m82gc8s2agl2/cv_yosraelmimouni.pdf?rlkey=v4gbr64s5pkrld2ejpqkmh8vk&st=jc6nfce5&dl=0", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -34,34 +34,29 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
+  linkedin: "https://www.linkedin.com/in/yosra-el-mimouni-5a40b12a3/",
+  gmail: "yosraelmimouni@gmail.com",
+  gitlab: "https://gitlab.com/yosraelmimouni2003",
+  
   display: true // Set true to display this section, defaults to false
 };
 
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I Do",
+  subTitle: "PASSIONATE SOFTWARE ENGINEER EXPLORING AI & FULL-STACK DEVELOPMENT",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Conception et développement d'applications web et desktop optimisées et intuitives"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Analyse et traitement de données avec Python, SQL et Power BI"
+    ),
+    emoji(
+      "⚡ Intégration d’API et services tiers pour l'IA et le cloud computing (OpenAI API, Google Cloud)"
     )
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
@@ -73,52 +68,52 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "C++",
+      fontAwesomeClassname: "fas fa-code"
+    },
+    {
+      skillName: "SQL Database",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "MongoDB",
+      fontAwesomeClassname: "fas fa-leaf"
+    },
+    {
+      skillName: "Spring Boot",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "FastAPI",
+      fontAwesomeClassname: "fas fa-rocket"
+    },
+    {
+      skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "GitHub",
+      fontAwesomeClassname: "fab fa-github"
+    },
+    {
+      skillName: "Linux",
+      fontAwesomeClassname: "fab fa-linux"
     }
   ],
   display: true // Set false to hide this section, defaults to true
-};
+  };
 
 // Education Section
 
@@ -126,77 +121,70 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "École Nationale des Sciences Appliquées de Khouribga (ENSA Khouribga)",
+      logo: require("./assets/images/ensakhLogo.png"), // Remplace par le bon logo
+      subHeader: "Cycle Ingénieur en Génie Informatique",
+      duration: "2022 - 2025",
+      desc: "Formation approfondie en développement logiciel, intelligence artificielle et gestion des systèmes informatiques.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Compétences en programmation : Python, Java, C++",
+        "Développement web et bases de données : JavaScript, PHP, MySQL, PostgreSQL",
+        "Analyse et visualisation de données avec Power BI et OpenAI API"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
 
+
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true, // Set to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Développement Backend", // Expérience en backend avec FastAPI, Spring Boot, JEE
+      progressPercentage: "85%"
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Analyse et Gestion de Données", // Expérience en SQL, Power BI, OpenAI API
+      progressPercentage: "80%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Développement Full-Stack", // Expérience en HTML, CSS, JavaScript, PHP, JEE
+      progressPercentage: "90%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false // Set true to display codersrank badges
 };
+
 
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true, // Set to true to show Work Experience Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Stagiaire en Développement IA & Analyse de Données",
+      company: "Technology & Telecom",
+      companylogo: require("./assets/images/technologyTelecomLogo.png"), // Ajoute le logo de l'entreprise
+      date: "Juillet 2024",
+      desc: "Développement d’outils d’intelligence artificielle pour l’analyse et l’optimisation des performances d’un chatbot.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Extraction et traitement de données pour l'amélioration des interactions utilisateur",
+        "Automatisation du processus d’analyse des performances du bot avec Python et Power BI",
+        "Mise en place d’API pour l’intégration des outils dans un environnement existant"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Responsable de la cellule d'activité",
+      company: "Comité Masjid",
+      companylogo: require("./assets/images/masjidLogo.png"), // Ajoute le logo du comité
+      date: "2022",
+      desc: "Organisation et gestion des activités communautaires au sein du comité.",
+      descBullets: [
+        "Coordination d’événements et d’initiatives locales",
+        "Gestion des ressources et des participants pour assurer le bon déroulement des activités"
+      ]
     }
   ]
 };
@@ -208,33 +196,53 @@ const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
-
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projets Réalisés",
+  subtitle: "QUELQUES APPLICATIONS ET PLATEFORMES SUR LESQUELLES J'AI TRAVAILLÉ",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/locationVoitureLogo.png"), // Remplace par le logo de ton projet
+      projectName: "Application Web de Location de Voitures",
+      projectDesc: "Développement d'une application web complète pour la gestion de location de véhicules.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Voir le projet",
+          url: "https://www.dropbox.com/scl/fi/87xxvdo45rwdf1diksfgp/rapportLatexJEE.pdf?rlkey=rk66nt3d8j7fcc0ujfxjm4gno&st=ezqemipe&dl=0"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/ecommerceLogo.png"), // Remplace par le logo du projet
+      projectName: "Site Web d’E-Commerce",
+      projectDesc: "Création d'un site web responsive pour la vente en ligne avec intégration de gestion de produits.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Voir le projet",
+          url: "https://www.dropbox.com/scl/fi/p14t9d1jp950m0ekqbww8/Design-sans-titre-3.pdf?rlkey=2il8tc16jyhiygxscal8bljm4&st=kk1spqw4&dl=0"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/suiviAcademiqueLogo.png"), // Remplace par le logo du projet
+      projectName: "Application Desktop de Suivi Académique",
+      projectDesc: "Développement d'une application de gestion des projets et tâches académiques en Java.",
+      footerLink: [
+        {
+          name: "Voir le projet",
+          url: "https://www.dropbox.com/scl/fi/aefftafdo9mke270lebmn/rapportJava-1.pdf?rlkey=q8pv0og3nkritro5ycq6dlg2g&st=ss7ore71&dl=0"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/gestionFormationLogo.png"), // Remplace par le logo du projet
+      projectName: "Gestion de Centre de Formation",
+      projectDesc: "Application développée en Python et SQL pour la gestion des formations et des étudiants.",
+      footerLink: [
+        {
+          name: "Voir le projet",
+          url: "https://www.dropbox.com/scl/fi/roaermgok1ghcpev80094/RPR2.pdf?rlkey=dz6n3jqv1jowb3188ee9gwfvk&st=klz41gbc&dl=0"
         }
       ]
     }
@@ -246,56 +254,77 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Certifications et Réalisations 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Certifications, formations et projets marquants qui témoignent de mon engagement et de mes compétences.",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Formation en Cloud Computing",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Certifiée par Google Cloud Skills Boost, acquisition de compétences sur les technologies cloud.",
+      image: require("./assets/images/googleCloudLogo.png"), // Remplace par une icône appropriée
+      imageAlt: "Google Cloud Logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          url: "#" // Remplace par le lien de ta certification si disponible
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Formation en IA Générative",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Formation réalisée avec Microsoft et LinkedIn sur les concepts et applications de l'intelligence artificielle générative.",
+      image: require("./assets/images/microsoftLogo.png"),
+      imageAlt: "Microsoft AI Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Certification",
+          url: "#" // Ajoute le lien vers la certification
         }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Formation en Power BI",
+      subtitle:
+        "Participation à l'atelier OpenSourceDays VI2 à ENSA Khouribga pour la maîtrise de Power BI.",
+      image: require("./assets/images/powerBILogo.png"),
+      imageAlt: "Power BI Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Certification",
+          url: "#" // Ajoute le lien si disponible
+        }
+      ]
+    },
+    {
+      title: "Formation en Programmation Orientée Objet (POO) - Java",
+      subtitle:
+        "Approfondissement des concepts de la POO en Java via Saylor.org.",
+      image: require("./assets/images/javaLogo.webp"),
+      imageAlt: "Java Logo",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "#" // Ajoute le lien vers ta certification
+        }
+      ]
+    },
+    {
+      title: "Formation en Python et C++",
+      subtitle:
+        "Certifications obtenues via Saylor.org attestant des compétences en Python et C++.",
+      image: require("./assets/images/pythonCppLogo.png"),
+      imageAlt: "Python & C++ Logo",
+      footerLink: [
+        {
+          name: "Certification Python",
+          url: "#" // Ajoute le lien vers ta certification Python
+        },
+        {
+          name: "Certification C++",
+          url: "#" // Ajoute le lien vers ta certification C++
         }
       ]
     }
