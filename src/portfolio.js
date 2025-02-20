@@ -1,22 +1,23 @@
 /* Change this file to get your personal Portfolio */
 
 // To change portfolio colors globally go to the  _globalColor.scss file
-
+import React from "react";
+import { useSpring, animated } from "react-spring";
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation"; // Animation du splash screen
+import myImage from "./assets/images/myImage.jpg"; // Ton image personnelle
 
-// Splash Screen
-
+// Splash Screen Configuration
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: true,
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000
 };
 
 // Summary And Greeting Section
-
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: true, // L'animation est activée
+  image: myImage, // Ton image personnelle
 };
 
 const greeting = {
