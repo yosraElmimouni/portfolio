@@ -42,29 +42,34 @@ const socialMediaLinks = {
 };
 
 // Skills Section
-
 const skillsSection = {
-  title: "What I Do",
-  subTitle: "PASSIONATE SOFTWARE ENGINEER EXPLORING AI & FULL-STACK DEVELOPMENT",
+  title: "Ce que je fais",
+  subTitle: "INGÉNIEURE LOGICIEL PASSIONNÉE EXPLORANT L'IA & LE DÉVELOPPEMENT FULL-STACK",
   skills: [
     emoji(
-      "⚡ Conception et développement d'applications web et desktop optimisées et intuitives"
+      "⚡ Développement d'applications web et desktop avec Java, Python, C++ et JavaScript"
     ),
     emoji(
-      "⚡ Analyse et traitement de données avec Python, SQL et Power BI"
+      "⚡ Analyse et visualisation de données avec Power BI, SQL et OpenAI API"
     ),
     emoji(
-      "⚡ Intégration d’API et services tiers pour l'IA et le cloud computing (OpenAI API, Google Cloud)"
+      "⚡ Conception et gestion de bases de données (MySQL, PostgreSQL, MongoDB, Oracle PL/SQL)"
+    ),
+    emoji(
+      "⚡ Intégration d’API et services cloud (OpenAI API, Google Cloud)"
+    ),
+    emoji(
+      "⚡ Collaboration et gestion de versions avec GitHub, GitLab et Jira"
     )
   ],
 
   softwareSkills: [
     {
-      skillName: "html-5",
+      skillName: "HTML5",
       fontAwesomeClassname: "fab fa-html5"
     },
     {
-      skillName: "css3",
+      skillName: "CSS3",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
@@ -80,11 +85,15 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-java"
     },
     {
+      skillName: "C",
+      fontAwesomeClassname: "fas fa-code"
+    },
+    {
       skillName: "C++",
       fontAwesomeClassname: "fas fa-code"
     },
     {
-      skillName: "SQL Database",
+      skillName: "SQL (MySQL, PostgreSQL, Oracle PL/SQL)",
       fontAwesomeClassname: "fas fa-database"
     },
     {
@@ -100,16 +109,36 @@ const skillsSection = {
       fontAwesomeClassname: "fas fa-rocket"
     },
     {
+      skillName: "MATLAB",
+      fontAwesomeClassname: "fas fa-calculator"
+    },
+    {
+      skillName: "Power BI",
+      fontAwesomeClassname: "fas fa-chart-bar"
+    },
+    {
       skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "GitHub",
+      skillName: "GitHub / GitLab",
       fontAwesomeClassname: "fab fa-github"
+    },
+    {
+      skillName: "Jira",
+      fontAwesomeClassname: "fas fa-tasks"
     },
     {
       skillName: "Linux",
       fontAwesomeClassname: "fab fa-linux"
+    },
+    {
+      skillName: "Google Cloud",
+      fontAwesomeClassname: "fab fa-google"
+    },
+    {
+      skillName: "OpenAI API",
+      fontAwesomeClassname: "fas fa-brain"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -118,65 +147,84 @@ const skillsSection = {
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true, // Mettre à false pour masquer cette section
   schools: [
     {
       schoolName: "École Nationale des Sciences Appliquées de Khouribga (ENSA Khouribga)",
-      logo: require("./assets/images/ensakhLogo.png"), // Remplace par le bon logo
+      logo: require("./assets/images/ensakhLogo.png"), // Assurez-vous d'avoir le bon logo
       subHeader: "Cycle Ingénieur en Génie Informatique",
       duration: "2022 - 2025",
       desc: "Formation approfondie en développement logiciel, intelligence artificielle et gestion des systèmes informatiques.",
       descBullets: [
-        "Compétences en programmation : Python, Java, C++",
-        "Développement web et bases de données : JavaScript, PHP, MySQL, PostgreSQL",
-        "Analyse et visualisation de données avec Power BI et OpenAI API"
+        "Maîtrise des langages de programmation : Python, Java, C, C++",
+        "Développement web avec JavaScript, PHP, JEE, FastAPI",
+        "Conception et gestion de bases de données : MySQL, PostgreSQL, MongoDB, Oracle PL/SQL",
+        "Analyse et visualisation de données avec Power BI et SQL",
+        "Utilisation des outils de gestion et de collaboration : GitHub, GitLab, Jira",
       ]
     }
   ]
 };
+
 
 
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, // Set to true to show Proficiency Section
+  viewSkillBars: true, // Afficher la section des compétences
   experience: [
     {
-      Stack: "Développement Backend", // Expérience en backend avec FastAPI, Spring Boot, JEE
+      Stack: "Développement Backend", // FastAPI, Spring Boot, JEE
       progressPercentage: "85%"
     },
     {
-      Stack: "Analyse et Gestion de Données", // Expérience en SQL, Power BI, OpenAI API
+      Stack: "Développement Frontend", // HTML, CSS, JavaScript, PHP
       progressPercentage: "80%"
     },
     {
-      Stack: "Développement Full-Stack", // Expérience en HTML, CSS, JavaScript, PHP, JEE
+      Stack: "Analyse et Gestion de Données", // SQL, Power BI, OpenAI API
+      progressPercentage: "85%"
+    },
+    {
+      Stack: "Gestion et Conception de Bases de Données", // MySQL, PostgreSQL, MongoDB, Oracle PL/SQL
       progressPercentage: "90%"
+    },
+    {
+      Stack: "Cloud Computing & API", // OpenAI API, Google Cloud
+      progressPercentage: "60%"
+    },
+    {
+      Stack: "Gestion de Version & Outils de Collaboration", // GitHub, GitLab, Jira
+      progressPercentage: "70%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges
+  displayCodersrank: false // Mettre à true pour afficher les badges CodersRank
 };
+
 
 
 // Work experience section
 
 const workExperiences = {
-  display: true, // Set to true to show Work Experience Section
+  display: true, // Afficher la section Expérience Professionnelle
   experience: [
     {
       role: "Stagiaire en Développement IA & Analyse de Données",
       company: "Technology & Telecom",
-      companylogo: require("./assets/images/technologyTelecomLogo.png"), // Ajoute le logo de l'entreprise
-      date: "Juillet 2024",
-      desc: "Développement d’outils d’intelligence artificielle pour l’analyse et l’optimisation des performances d’un chatbot.",
+      companylogo: require("./assets/images/technologyTelecomLogo.png"), // Vérifie que le logo est disponible
+      date: "Juillet - Août 2024",
+      desc: "Développement d’outils pour la préparation de données et l’analyse des performances d’un bot conversationnel.",
       descBullets: [
-        "Extraction et traitement de données pour l'amélioration des interactions utilisateur",
-        "Automatisation du processus d’analyse des performances du bot avec Python et Power BI",
-        "Mise en place d’API pour l’intégration des outils dans un environnement existant"
+        "Développement d’un script Python avec BeautifulSoup pour nettoyer les fichiers HTML en supprimant les éléments non pertinents (CSS, JavaScript, commentaires).",
+        "Extraction et structuration du contenu en sections distinctes en fonction des balises HTML (<h1>, <h2>, <p>).",
+        "Utilisation de l’API OpenAI pour générer des résumés et structurer la documentation en un format hiérarchisé et exploitable.",
+        "Mise en place d’un processus automatisé pour la gestion et l’amélioration de la documentation technique du bot.",
+        "Contribution à l’optimisation des interactions utilisateur en améliorant l’accessibilité et la compréhension des réponses du bot."
       ]
     }
   ]
 };
+
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
@@ -192,9 +240,15 @@ const bigProjects = {
   subtitle: "QUELQUES APPLICATIONS ET PLATEFORMES SUR LESQUELLES J'AI TRAVAILLÉ",
   projects: [
     {
-      image: require("./assets/images/locationVoitureLogo.png"), // Remplace par le logo de ton projet
+      image: require("./assets/images/locationVoitureLogo.png"), // Remplace par le bon logo
       projectName: "Application Web de Location de Voitures",
-      projectDesc: "Développement d'une application web complète pour la gestion de location de véhicules.",
+      projectDesc: "Développement d’une plateforme complète permettant la gestion des véhicules, des clients, des réservations et des paiements.",
+      descBullets: [
+        "Développement backend avec Java EE et Spring Boot",
+        "Frontend construit avec Thymeleaf pour un rendu dynamique",
+        "Gestion des bases de données avec MySQL et déploiement via Docker",
+        "Adoption de la méthodologie Agile Scrum pour une flexibilité maximale"
+      ],
       footerLink: [
         {
           name: "Voir le projet",
@@ -203,9 +257,15 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/ecommerceLogo.png"), // Remplace par le logo du projet
-      projectName: "Site Web d’E-Commerce",
-      projectDesc: "Création d'un site web responsive pour la vente en ligne avec intégration de gestion de produits.",
+      image: require("./assets/images/ecommerceLogo.png"), // Remplace par le bon logo
+      projectName: "Site E-Commerce",
+      projectDesc: "Développement d'une plateforme de commerce en ligne avec gestion des produits, des catégories, des paniers et des commandes.",
+      descBullets: [
+        "Frontend développé avec HTML, CSS, JavaScript et Bootstrap",
+        "Backend en PHP et base de données MySQL",
+        "Système d’authentification sécurisé avec gestion des sessions utilisateur",
+        "Ajout d'un panier interactif et d'un processus de commande optimisé"
+      ],
       footerLink: [
         {
           name: "Voir le projet",
@@ -214,9 +274,15 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/suiviAcademiqueLogo.png"), // Remplace par le logo du projet
-      projectName: "Application Desktop de Suivi Académique",
-      projectDesc: "Développement d'une application de gestion des projets et tâches académiques en Java.",
+      image: require("./assets/images/suiviAcademiqueLogo.png"), // Remplace par le bon logo
+      projectName: "Application de Gestion des Projets Académiques",
+      projectDesc: "Développement d’une application desktop facilitant l’organisation et le suivi des projets et des tâches académiques pour les enseignants.",
+      descBullets: [
+        "Système d’authentification sécurisé avec gestion des comptes utilisateurs",
+        "Gestion des projets et des tâches avec filtrage et recherche avancée",
+        "Intégration d’outils analytiques pour le suivi des performances",
+        "Développement en Java avec JavaFX et base de données MySQL"
+      ],
       footerLink: [
         {
           name: "Voir le projet",
@@ -225,19 +291,65 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/gestionFormationLogo.png"), // Remplace par le logo du projet
-      projectName: "Gestion de Centre de Formation",
-      projectDesc: "Application développée en Python et SQL pour la gestion des formations et des étudiants.",
+      image: require("./assets/images/gestionFormationLogo.png"), // Remplace par le bon logo
+      projectName: "Site Web pour un Centre de Formation",
+      projectDesc: "Développement d’un site web interactif permettant la gestion des formations et des inscriptions des apprenants.",
+      descBullets: [
+        "Développement frontend avec HTML, CSS, JavaScript et Bootstrap",
+        "Backend en Python (Flask/Django) et base de données MySQL/PostgreSQL",
+        "Espace administrateur pour la gestion des formations et utilisateurs",
+        "Moteur de recherche avancé et système de notifications"
+      ],
       footerLink: [
         {
           name: "Voir le projet",
           url: "https://www.dropbox.com/scl/fi/roaermgok1ghcpev80094/RPR2.pdf?rlkey=dz6n3jqv1jowb3188ee9gwfvk&st=klz41gbc&dl=0"
         }
       ]
+    },
+    {
+      image: require("./assets/images/botPerformanceLogo.png"), // Remplace par le bon logo
+      projectName: "Optimisation des Performances d'un Chatbot IA",
+      projectDesc: "Développement d’outils pour l’analyse des performances d’un chatbot et l’amélioration de son interaction avec les utilisateurs.",
+      descBullets: [
+        "Nettoyage et structuration du contenu HTML avec BeautifulSoup",
+        "Utilisation de l’API OpenAI pour générer et structurer la documentation",
+        "Mise en place d’un pipeline automatisé pour la gestion des feedbacks"
+      ],
+      footerLink: [
+        {
+          name: "Voir le projet",
+          url: "LIEN_VERS_RAPPORT"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/imageProcessingLogo.png"), // Remplace par le bon logo
+      projectName: "Traitement d’Images et Reconnaissance d’Objets",
+      projectDesc: "Développement d’un algorithme de détection d’objets basé sur le traitement d’images.",
+      descBullets: [
+        "Utilisation de Python et OpenCV pour l'analyse et la reconnaissance d’objets",
+        "Développement d’un algorithme de détection de contours et de segmentation",
+        "Création d’un modèle d’apprentissage pour améliorer la précision"
+      ],
+      footerLink: []
+    },
+    {
+      image: require("./assets/images/pythonGamesLogo.png"), // Remplace par le bon logo
+      projectName: "Jeux en Python avec Interface Graphique",
+      projectDesc: "Développement d’une série de jeux interactifs en Python avec Tkinter, incluant Tic-Tac-Toe, le Pendu, Puissance 4 et un Quiz Mathématique.",
+      descBullets: [
+        "Interface graphique développée avec Tkinter pour une meilleure interaction utilisateur",
+        "Utilisation de `random` pour générer des éléments aléatoires (ex: mots, nombres)",
+        "Gestion des événements et des conditions de victoire pour chaque jeu",
+        "Utilisation des bibliothèques `messagebox` et `ttk` pour améliorer l’expérience utilisateur"
+      ],
+      footerLink: []
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true // Mettre à false pour masquer cette section
 };
+
 
 // Achievement Section
 // Include certificates, talks etc
