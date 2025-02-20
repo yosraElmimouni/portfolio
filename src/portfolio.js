@@ -5,7 +5,7 @@ import React from "react";
 import { useSpring, animated } from "react-spring";
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Animation du splash screen
-import myImage from "./assets/images/myImage.jpg"; // Ton image personnelle
+import myImage from "./assets/images/imageper.png"; // Ton image personnelle
 
 // Splash Screen Configuration
 const splashScreen = {
