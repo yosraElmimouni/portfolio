@@ -306,45 +306,6 @@ const bigProjects = {
           url: "https://www.dropbox.com/scl/fi/roaermgok1ghcpev80094/RPR2.pdf?rlkey=dz6n3jqv1jowb3188ee9gwfvk&st=klz41gbc&dl=0"
         }
       ]
-    },
-    {
-      image: require("./assets/images/botPerformanceLogo.png"), // Remplace par le bon logo
-      projectName: "Optimisation des Performances d'un Chatbot IA",
-      projectDesc: "Développement d’outils pour l’analyse des performances d’un chatbot et l’amélioration de son interaction avec les utilisateurs.",
-      descBullets: [
-        "Nettoyage et structuration du contenu HTML avec BeautifulSoup",
-        "Utilisation de l’API OpenAI pour générer et structurer la documentation",
-        "Mise en place d’un pipeline automatisé pour la gestion des feedbacks"
-      ],
-      footerLink: [
-        {
-          name: "Voir le projet",
-          url: "LIEN_VERS_RAPPORT"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/imageProcessingLogo.png"), // Remplace par le bon logo
-      projectName: "Traitement d’Images et Reconnaissance d’Objets",
-      projectDesc: "Développement d’un algorithme de détection d’objets basé sur le traitement d’images.",
-      descBullets: [
-        "Utilisation de Python et OpenCV pour l'analyse et la reconnaissance d’objets",
-        "Développement d’un algorithme de détection de contours et de segmentation",
-        "Création d’un modèle d’apprentissage pour améliorer la précision"
-      ],
-      footerLink: []
-    },
-    {
-      image: require("./assets/images/pythonGamesLogo.png"), // Remplace par le bon logo
-      projectName: "Jeux en Python avec Interface Graphique",
-      projectDesc: "Développement d’une série de jeux interactifs en Python avec Tkinter, incluant Tic-Tac-Toe, le Pendu, Puissance 4 et un Quiz Mathématique.",
-      descBullets: [
-        "Interface graphique développée avec Tkinter pour une meilleure interaction utilisateur",
-        "Utilisation de `random` pour générer des éléments aléatoires (ex: mots, nombres)",
-        "Gestion des événements et des conditions de victoire pour chaque jeu",
-        "Utilisation des bibliothèques `messagebox` et `ttk` pour améliorer l’expérience utilisateur"
-      ],
-      footerLink: []
     }
   ],
   display: true // Mettre à false pour masquer cette section
