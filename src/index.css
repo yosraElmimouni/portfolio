@@ -34,3 +34,25 @@ body {
     line-height: normal;
   }
 }
+.animated-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Occupe toute la hauteur de l'écran */
+}
+
+.animated-image {
+  width: 100px; /* Taille de l'image */
+  height: 100px;
+  border-radius: 50%;
+  animation: bounce 2s ease-in-out infinite; /* Animation de rebond */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
