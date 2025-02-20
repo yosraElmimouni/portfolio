@@ -10,7 +10,7 @@ const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: (
     <div className="animated-image-container">
-      <img src={myImage} alt="My Image" className="animated-image" />
+        <img src={myImage} alt="Personne illustrant un profil dynamique" className="animated-image" />
     </div>
   ),
   duration: 3000 // Durée de l'animation
