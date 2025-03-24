@@ -1,120 +1,129 @@
 # Projet Student List - Infrastructure Docker
+
 ## Membres du groupe
-- Boumour Marwa
-- El mimouni Yosra 
-- Imassenda Salma
+- **Boumour Marwa**
+- **El Mimouni Yosra**
+- **Imassenda Salma**
 
-## Introduction
-Ce projet vise à améliorer l'infrastructure d'une application existante appelée "student_list" en utilisant Docker. L'application permet d'afficher une liste d'étudiants avec leur âge et se compose de deux modules : une API REST en Python et une interface web en PHP.
+---
 
-## Objectifs
-- Améliorer le processus de déploiement de l'application
-- Gérer les versions de l'infrastructure
-- Adopter les meilleures pratiques pour une infrastructure Docker
-- Mettre en place une Infrastructure as Code (IaC)
+## 📌 Introduction
+Ce projet vise à améliorer l'infrastructure de l'application "student_list" en utilisant Docker. L'application permet d'afficher une liste d'étudiants avec leur âge et se compose de deux modules principaux :
+- Une **API REST en Python**
+- Une **interface web en PHP**
 
-## Structure du projet
+L'objectif est de simplifier le déploiement et la gestion des versions tout en adoptant les meilleures pratiques DevOps.
+
+---
+
+## 🎯 Objectifs
+✅ Améliorer le processus de déploiement de l'application  
+✅ Gérer efficacement les versions de l'infrastructure  
+✅ Adopter les meilleures pratiques pour une infrastructure Docker  
+✅ Mettre en place une Infrastructure as Code (**IaC**)
+
+---
+
+## 📂 Structure du projet
 Le projet est organisé avec les fichiers suivants :
-- `Dockerfile` : Pour construire l'image de l'API Python
-- `docker-compose.yml` : Pour orchestrer le déploiement des services (API et site web)
-- `docker-compose-registry.yml` : Pour déployer un registre Docker privé
+
+📌 **Infrastructure Docker**
+- `Dockerfile` : Construction de l'image de l'API Python
+- `docker-compose.yml` : Orchestration des services (API et interface web)
+- `docker-compose-registry.yml` : Configuration d'un registre Docker privé
+
+📌 **Code de l'API**
 - `student_age.py` : Code source de l'API REST
-- `requirements.txt` : Dépendances Python pour l'API
+- `requirements.txt` : Dépendances Python
 - `student_age.json` : Données des étudiants au format JSON
-- `website/index.php` : Interface web pour interagir avec l'API
 
-## 1. Construction de l'API
+📌 **Interface Web**
+- `website/index.php` : Interface utilisateur permettant d'interagir avec l'API
 
-### Description du Dockerfile
-Le Dockerfile pour l'API a été créé avec les spécifications suivantes :
-- Image de base : `python:3.8-buster`
-- Informations du mainteneur incluses
-- Installation des prérequis pour Flask et autres dépendances
-- Création d'un volume pour la persistance des données
-- Exposition du port 5000 pour l'API
+---
+
+## 1️⃣ Construction de l'API avec Docker
+
+### 🏗️ Description du Dockerfile
+Le **Dockerfile** de l'API est construit avec les spécifications suivantes :
+- Image de base : **`python:3.8-buster`**
+- Installation des dépendances Flask et autres prérequis
+- Utilisation d'un volume pour la persistance des données
+- Exposition du port **5000**
 - Configuration de la commande de démarrage
 
-![Capture d'écran du test de l'API](./captures_ecran/2.jpg)
+📷 **Capture d'écran : Test de l'API**
+![Test API](./captures_ecran/2.jpg)
 
-### Construction de l'image Docker de l'API
-
+### 🔨 Construction de l'image Docker de l'API
 ```bash
-DOCKER BUILD -t submit api
+DOCKER BUILD -t student_api .
 ```
 
-![Capture d'écran du test de l'API](./captures_ecran/3.jpg)
-ET le resultat dans dockker desktop : 
+📷 **Capture d'écran : Image Docker dans Docker Desktop**
+![Docker Desktop](./captures_ecran/4.jpg)
 
-![Capture d'écran du test de l'API](./captures_ecran/4.jpg)
+### 🚀 Exécution du conteneur avec montage du fichier JSON
+📷 **Capture d'écran : Exécution du conteneur**
+![Docker Container](./captures_ecran/5.jpg)
 
-Exécution du conteneur avec montage du fichier JSON
-![Capture d'écran du test de l'API](captures_ecran/5.jpg)
-ET le resultat dans dockker desktop : 
-![Capture d'écran du test de l'API](./captures_ecran/6.jpg)
-
-Après avoir construit l'image, j'ai testé l'API avec la commande suivante :
+### 🛠️ Test de l'API
 ```bash
-curl -u root:root -X GET http://localhost:5000/supmit/api/v1.0/g
+curl -u root:root -X GET http://localhost:5000/submit/api/v1.0/g
 ```
-![Capture d'écran du test de l'API](./captures_ecran/7.jpg)
-![Capture d'écran du test de l'API](./captures_ecran/8.jpg)
-## 2. Infrastructure as Code
+📷 **Capture d'écran : Résultat du test**
+![Test API Result](./captures_ecran/7.jpg)
 
-### Configuration Docker Compose
-J'ai créé un fichier `docker-compose.yml` pour orchestrer les deux services :
+---
 
+## 2️⃣ Infrastructure as Code avec Docker Compose
+
+### ⚙️ Configuration de `docker-compose.yml`
 ```yaml
 version: '3.8'
 services:
   api:
-    image: student_api  # Nom de l'image que vous avez construite précédemment pour l'API
+    image: student_api
     container_name: student_api_container
     volumes:
       - ./simple_api/student_age.json:/data/student_age.json
     ports:
-      - "5000:5000"  # Exposer le port 5000 de l'API
+      - "5000:5000"
     networks:
-      - student_network  # Utilisation d'un réseau spécifique pour l'application
+      - student_network
     environment:
       - FLASK_APP=student_age
       - FLASK_ENV=development
     restart: always
   website:
-    image: php:apache  # Utilisation de l'image php:apache pour l'interface utilisateur
+    image: php:apache
     container_name: website_container
-    environment:
-      - USERNAME=root
-      - PASSWORD=root
     volumes:
-      - ./website:/var/www/html  # Lier le répertoire 'website' local au répertoire '/var/www/html' dans le conteneur
+      - ./website:/var/www/html
     depends_on:
-      - api  # L'API doit démarrer avant le site web
+      - api
     ports:
-      - "8080:80"  # Exposer le port 80 du site web sur le port 8080 de l'hôte
+      - "8080:80"
     networks:
-      - student_network  # Utiliser le même réseau que l'API
+      - student_network
     restart: always
 networks:
-  student_network:  # Définir un réseau spécifique pour le projet
+  student_network:
     driver: bridge
 ```
 
-### Déploiement et test
-Après avoir configuré le fichier Docker Compose, j'ai lancé les services :
+### 🚀 Déploiement et test
 ```bash
 docker-compose up -d
 ```
-![Capture d'écran du site web fonctionnel](./captures_ecran/9.1.jpg)
+📷 **Interface Web en action**
+![Site Web](./captures_ecran/9.jpg)
 
-J'ai ensuite accédé à l'interface web sur http://localhost:8080 et testé la fonctionnalité "List Student".
-![Capture d'écran du site web fonctionnel](./captures_ecran/14.jpg)
+---
 
-![Capture d'écran du site web fonctionnel](./captures_ecran/9.jpg)
+## 3️⃣ Registre Docker Privé
 
-## 3. Registre Docker privé
-
-Pour déployer un registre Docker privé, j'ai créé un fichier `docker-compose-registry.yml` :
-
+### 📜 Configuration du registre `docker-compose-registry.yml`
 ```yaml
 version: '3'
 services:
@@ -122,7 +131,6 @@ services:
     image: registry:2
     container_name: my-registry
     ports:
-      - "5001:5000"  # On expose 5001 en dehors du conteneur mais il reste 5000 à l'intérieur
       - "5001:5000"
     volumes:
       - ./data:/var/lib/registry
@@ -140,7 +148,6 @@ services:
       - "8081:80"
     environment:
       - REGISTRY_TITLE=Mon Docker Registry
-      - REGISTRY_URL=http://localhost:5001  # Mise à jour du port ici
       - REGISTRY_URL=http://localhost:5001
       - SINGLE_REGISTRY=true
     depends_on:
@@ -148,34 +155,31 @@ services:
     restart: always
 ```
 
-### Push de l'image vers le registre privé
-commande pour démarrer un Docker Registry : 
+### 🔄 Démarrage du registre
 ```bash
 docker run -d -p 5000:5001 --name registry -v C:\Users\hp\Downloads\dergham\student_list:/var/lib/registry registry:2
 ```
+📷 **Capture d'écran : Interface du registre**
+![Docker Registry](./captures_ecran/11.jpg)
 
-![Capture d'écran de l'interface du registre](./captures_ecran/11.jpg)
-
-commande utilise Docker Compose pour démarrer les services définis dans le fichier docker-compose-registry.yml
-```bash
-docker-compose -f docker-compose-registry.yml up -d
-```
-
-![Capture d'écran de l'interface du registre](./captures_ecran/13.jpg)
-
-J'ai poussé l'image de l'API vers le registre privé :
+### 📤 Push de l'image vers le registre privé
 ```bash
 docker tag student_api localhost:5001/student_api:latest
 docker push localhost:5001/student_api:latest
 ```
+📷 **Capture d'écran : Registre mis à jour**
+![Docker Registry Update](./captures_ecran/12.jpg)
 
+---
 
-![Capture d'écran de l'interface du registre](./captures_ecran/12.jpg)
+## ✅ Conclusion
+L'implémentation de Docker et Docker Compose permet de déployer **student_list** de manière automatisée et scalable. L'utilisation d'un registre privé améliore la gestion des versions et renforce l'organisation du projet.
 
-## Conclusion
-Cette implémentation permet de déployer l'application "student_list" de manière évolutive et automatisée grâce à Docker. L'utilisation de Docker Compose facilite la gestion des différents services et assure leur interaction correcte. Le registre privé permet de stocker et de gérer les versions des images Docker.
+### 🔮 Améliorations futures
+🚀 Mise en place d'un service de monitoring  
+🔒 Configuration HTTPS pour une sécurité renforcée  
+🤖 Automatisation du déploiement avec CI/CD
 
-## Améliorations possibles
-- Mise en place d'un service de monitoring
-- Configuration HTTPS pour les communications entre services
-- Automatisation du déploiement via CI/CD
+---
+📢 *Merci d'avoir suivi ce projet !* 🚀
+
