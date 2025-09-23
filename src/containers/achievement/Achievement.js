@@ -41,11 +41,15 @@ export default function Achievement() {
                   isDark={isDark}
                   cardInfo={{
                     title: card.title,
-                    description: card.subtitle,
+                    description: card.description,
                     image: card.image,
                     imageAlt: card.imageAlt,
+                    date: card.date,
+                    tags: card.tags,
+                    badge: card.badge,
                     footer: card.footerLink
                   }}
+                  className="certificate-card-animated"
                 />
               );
             })}

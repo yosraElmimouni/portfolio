@@ -1,0 +1,59 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2"/>
+  
+  <!-- Warehouse building -->
+  <rect x="60" y="80" width="80" height="60" fill="#6c757d" stroke="#495057" stroke-width="1"/>
+  <rect x="70" y="90" width="15" height="15" fill="#adb5bd"/>
+  <rect x="115" y="90" width="15" height="15" fill="#adb5bd"/>
+  
+  <!-- Car icons representing vehicles in stock -->
+  <g transform="translate(75, 120)">
+    <!-- Car 1 -->
+    <rect x="0" y="0" width="12" height="6" fill="#007bff" rx="1"/>
+    <circle cx="2" cy="6" r="1.5" fill="#343a40"/>
+    <circle cx="10" cy="6" r="1.5" fill="#343a40"/>
+  </g>
+  
+  <g transform="translate(95, 120)">
+    <!-- Car 2 -->
+    <rect x="0" y="0" width="12" height="6" fill="#28a745" rx="1"/>
+    <circle cx="2" cy="6" r="1.5" fill="#343a40"/>
+    <circle cx="10" cy="6" r="1.5" fill="#343a40"/>
+  </g>
+  
+  <g transform="translate(115, 120)">
+    <!-- Car 3 -->
+    <rect x="0" y="0" width="12" height="6" fill="#dc3545" rx="1"/>
+    <circle cx="2" cy="6" r="1.5" fill="#343a40"/>
+    <circle cx="10" cy="6" r="1.5" fill="#343a40"/>
+  </g>
+  
+  <!-- Database icon representing stock management -->
+  <g transform="translate(85, 45)">
+    <rect x="0" y="0" width="30" height="20" fill="#17a2b8" stroke="#138496" stroke-width="1" rx="2"/>
+    <rect x="5" y="3" width="20" height="2" fill="#ffffff"/>
+    <rect x="5" y="7" width="20" height="2" fill="#ffffff"/>
+    <rect x="5" y="11" width="20" height="2" fill="#ffffff"/>
+    <rect x="5" y="15" width="20" height="2" fill="#ffffff"/>
+  </g>
+  
+  <!-- Chart bars representing analytics -->
+  <g transform="translate(140, 60)">
+    <rect x="0" y="8" width="4" height="12" fill="#ffc107"/>
+    <rect x="6" y="4" width="4" height="16" fill="#fd7e14"/>
+    <rect x="12" y="0" width="4" height="20" fill="#6f42c1"/>
+  </g>
+  
+  <!-- AMDEC badge -->
+  <g transform="translate(30, 30)">
+    <circle cx="0" cy="0" r="12" fill="#dc3545" stroke="#c82333" stroke-width="1"/>
+    <text x="0" y="3" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">A</text>
+  </g>
+  
+  <!-- Stock level indicator -->
+  <g transform="translate(160, 30)">
+    <rect x="0" y="0" width="8" height="20" fill="#e9ecef" stroke="#6c757d" stroke-width="1"/>
+    <rect x="1" y="5" width="6" height="10" fill="#28a745"/>
+  </g>
+</svg> 

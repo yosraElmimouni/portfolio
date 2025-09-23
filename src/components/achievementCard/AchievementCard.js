@@ -12,36 +12,28 @@ export default function AchievementCard({cardInfo, isDark}) {
   }
 
   return (
-    <div className={isDark ? "dark-mode certificate-card" : "certificate-card"}>
-      <div className="certificate-image-div">
-        <img
-          src={cardInfo.image}
-          alt={cardInfo.imageAlt || "Card Thumbnail"}
-          className="card-image"
-        ></img>
+    <div className={isDark ? "dark-mode simple-card" : "simple-card"}>
+      <div className="simple-card-img">
+        <a
+          href={cardInfo.footer[0]?.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{display: "block"}}
+          title={cardInfo.footer[0]?.name}
+        >
+          <img
+            src={cardInfo.image}
+            alt={cardInfo.imageAlt || "Card Thumbnail"}
+            className="card-image"
+            style={{cursor: "pointer"}}
+          />
+        </a>
       </div>
-      <div className="certificate-detail-div">
-        <h5 className={isDark ? "dark-mode card-title" : "card-title"}>
+      <div className="simple-card-content">
+        <h5 className={isDark ? "dark-mode simple-title" : "simple-title"}>
           {cardInfo.title}
         </h5>
-        <p className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>
-          {cardInfo.description}
-        </p>
-      </div>
-      <div className="certificate-card-footer">
-        {cardInfo.footer.map((v, i) => {
-          return (
-            <span
-              key={i}
-              className={
-                isDark ? "dark-mode certificate-tag" : "certificate-tag"
-              }
-              onClick={() => openUrlInNewTab(v.url, v.name)}
-            >
-              {v.name}
-            </span>
-          );
-        })}
+        <div className="simple-date">{cardInfo.date}</div>
       </div>
     </div>
   );

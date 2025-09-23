@@ -20,6 +20,7 @@ import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
+import "../styles/animations.scss";
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -51,19 +52,45 @@ const Main = () => {
         ) : (
           <>
             <Header />
-            <Greeting />
-            <Skills />
-            <StackProgress />
-            <Education />
-            <WorkExperience />
-            <Projects />
-            <StartupProject />
-            <Achievement />
-            <Blogs />
-            <Talks />
-            <Twitter />
-            <Podcast />
-            <Profile />
+            <div className="section-animate">
+              <Greeting />
+            </div>
+            <div className="section-animate-left">
+              <Skills />
+            </div>
+            <div className="section-animate-right">
+              <StackProgress />
+            </div>
+            <div className="section-animate">
+              <Education />
+            </div>
+            <div className="section-animate-left">
+              <WorkExperience />
+            </div>
+            <div className="section-animate-right">
+              <Projects />
+            </div>
+            <div className="section-animate">
+              <StartupProject />
+            </div>
+            <div className="section-animate-left">
+              <Achievement />
+            </div>
+            <div className="section-animate-right">
+              <Blogs />
+            </div>
+            <div className="section-animate">
+              <Talks />
+            </div>
+            <div className="section-animate-left">
+              <Twitter />
+            </div>
+            <div className="section-animate-right">
+              <Podcast />
+            </div>
+            <div className="section-animate">
+              <Profile />
+            </div>
             <Footer />
             <ScrollToTopButton />
           </>

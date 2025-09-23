@@ -56,7 +56,7 @@ const skillsSection = {
       "⚡ Conception et gestion de bases de données (MySQL, PostgreSQL, MongoDB, Oracle PL/SQL)"
     ),
     emoji(
-      "⚡ Intégration d’API et services cloud (OpenAI API, Google Cloud)"
+      "⚡ Intégration d'API et services cloud (OpenAI API, Google Cloud)"
     ),
     emoji(
       "⚡ Collaboration et gestion de versions avec GitHub, GitLab et Jira"
@@ -213,13 +213,13 @@ const workExperiences = {
       company: "Technology & Telecom",
       companylogo: require("./assets/images/technologyTelecomLogo.png"), // Vérifie que le logo est disponible
       date: "Juillet - Août 2024",
-      desc: "Développement d’outils pour la préparation de données et l’analyse des performances d’un bot conversationnel.",
+      desc: "Développement d'outils pour la préparation de données et l'analyse des performances d'un bot conversationnel.",
       descBullets: [
-        "Développement d’un script Python avec BeautifulSoup pour nettoyer les fichiers HTML en supprimant les éléments non pertinents (CSS, JavaScript, commentaires).",
+        "Développement d'un script Python avec BeautifulSoup pour nettoyer les fichiers HTML en supprimant les éléments non pertinents (CSS, JavaScript, commentaires).",
         "Extraction et structuration du contenu en sections distinctes en fonction des balises HTML (<h1>, <h2>, <p>).",
-        "Utilisation de l’API OpenAI pour générer des résumés et structurer la documentation en un format hiérarchisé et exploitable.",
-        "Mise en place d’un processus automatisé pour la gestion et l’amélioration de la documentation technique du bot.",
-        "Contribution à l’optimisation des interactions utilisateur en améliorant l’accessibilité et la compréhension des réponses du bot."
+        "Utilisation de l'API OpenAI pour générer des résumés et structurer la documentation en un format hiérarchisé et exploitable.",
+        "Mise en place d'un processus automatisé pour la gestion et l'amélioration de la documentation technique du bot.",
+        "Contribution à l'optimisation des interactions utilisateur en améliorant l'accessibilité et la compréhension des réponses du bot."
       ]
     }
   ]
@@ -242,7 +242,7 @@ const bigProjects = {
     {
       image: require("./assets/images/locationVoitureLogo.png"), // Remplace par le bon logo
       projectName: "Application Web de Location de Voitures",
-      projectDesc: "Développement d’une plateforme complète permettant la gestion des véhicules, des clients, des réservations et des paiements.",
+      projectDesc: "Développement d'une plateforme complète permettant la gestion des véhicules, des clients, des réservations et des paiements.",
       descBullets: [
         "Développement backend avec Java EE et Spring Boot",
         "Frontend construit avec Thymeleaf pour un rendu dynamique",
@@ -263,7 +263,7 @@ const bigProjects = {
       descBullets: [
         "Frontend développé avec HTML, CSS, JavaScript et Bootstrap",
         "Backend en PHP et base de données MySQL",
-        "Système d’authentification sécurisé avec gestion des sessions utilisateur",
+        "Système d'authentification sécurisé avec gestion des sessions utilisateur",
         "Ajout d'un panier interactif et d'un processus de commande optimisé"
       ],
       footerLink: [
@@ -276,11 +276,11 @@ const bigProjects = {
     {
       image: require("./assets/images/suiviAcademiqueLogo.png"), // Remplace par le bon logo
       projectName: "Application de Gestion des Projets Académiques",
-      projectDesc: "Développement d’une application desktop facilitant l’organisation et le suivi des projets et des tâches académiques pour les enseignants.",
+      projectDesc: "Développement d'une application desktop facilitant l'organisation et le suivi des projets et des tâches académiques pour les enseignants.",
       descBullets: [
-        "Système d’authentification sécurisé avec gestion des comptes utilisateurs",
+        "Système d'authentification sécurisé avec gestion des comptes utilisateurs",
         "Gestion des projets et des tâches avec filtrage et recherche avancée",
-        "Intégration d’outils analytiques pour le suivi des performances",
+        "Intégration d'outils analytiques pour le suivi des performances",
         "Développement en Java avec JavaFX et base de données MySQL"
       ],
       footerLink: [
@@ -293,7 +293,7 @@ const bigProjects = {
     {
       image: require("./assets/images/gestionFormationLogo.png"), // Remplace par le bon logo
       projectName: "Site Web pour un Centre de Formation",
-      projectDesc: "Développement d’un site web interactif permettant la gestion des formations et des inscriptions des apprenants.",
+      projectDesc: "Développement d'un site web interactif permettant la gestion des formations et des inscriptions des apprenants.",
       descBullets: [
         "Développement frontend avec HTML, CSS, JavaScript et Bootstrap",
         "Backend en Python (Flask/Django) et base de données MySQL/PostgreSQL",
@@ -310,12 +310,12 @@ const bigProjects = {
     {
       image: require("./assets/images/pythonGamesLogo.png"), // Remplace par le bon logo
       projectName: "Jeux en Python avec Interface Graphique",
-      projectDesc: "Développement d’une série de jeux interactifs en Python avec Tkinter, incluant Tic-Tac-Toe, le Pendu, Puissance 4 et un Quiz Mathématique.",
+      projectDesc: "Développement d'une série de jeux interactifs en Python avec Tkinter, incluant Tic-Tac-Toe, le Pendu, Puissance 4 et un Quiz Mathématique.",
       descBullets: [
         "Interface graphique développée avec Tkinter pour une meilleure interaction utilisateur",
         "Utilisation de `random` pour générer des éléments aléatoires (ex: mots, nombres)",
         "Gestion des événements et des conditions de victoire pour chaque jeu",
-        "Utilisation des bibliothèques `messagebox` et `ttk` pour améliorer l’expérience utilisateur"
+        "Utilisation des bibliothèques `messagebox` et `ttk` pour améliorer l'expérience utilisateur"
       ],
       footerLink: [{
         name: "Voir le projet",
@@ -341,12 +341,16 @@ const achievementSection = {
       title: "Formation en Cloud Computing",
       subtitle:
         "Certifiée par Google Cloud Skills Boost, acquisition de compétences sur les technologies cloud.",
-      image: require("./assets/images/googleCloudLogo.png"), // Remplace par une icône appropriée
+      description: "J'ai suivi cette formation pour approfondir mes connaissances sur le déploiement d'applications cloud, la gestion d'infrastructures modernes et l'automatisation des services cloud.",
+      date: "Mars 2024",
+      image: require("./assets/images/googleCloudLogo.png"),
       imageAlt: "Google Cloud Logo",
+      tags: ["Cloud", "Google"],
+      badge: "Top",
       footerLink: [
         {
-          name: "Certification",
-          url: "#" // Remplace par le lien de ta certification si disponible
+          name: "Voir la certification",
+          url: "#"
         }
       ]
     },
@@ -354,12 +358,16 @@ const achievementSection = {
       title: "Formation en IA Générative",
       subtitle:
         "Formation réalisée avec Microsoft et LinkedIn sur les concepts et applications de l'intelligence artificielle générative.",
+      description: "Cette formation m'a permis de comprendre les enjeux et les applications de l'IA générative, ainsi que d'expérimenter des outils concrets pour la création de contenu assistée par IA.",
+      date: "Avril 2024",
       image: require("./assets/images/microsoftLogo.png"),
       imageAlt: "Microsoft AI Logo",
+      tags: ["IA", "Microsoft", "LinkedIn"],
+      badge: "Nouveau",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://www.dropbox.com/scl/fi/8ivo4frr68e6rn4ksikvd/CertificateOfCompletion_Preparer-votre-carriere-dans-lIA-generative-par-Microsoft-et-LinkedIn-1.pdf?rlkey=bcp3nsvbu4x6xlrx3gd95a81c&st=51w6lq1z&dl=0" // Ajoute le lien vers la certification
+          name: "Voir la certification",
+          url: "https://www.dropbox.com/scl/fi/8ivo4frr68e6rn4ksikvd/CertificateOfCompletion_Preparer-votre-carriere-dans-lIA-generative-par-Microsoft-et-LinkedIn-1.pdf?rlkey=bcp3nsvbu4x6xlrx3gd95a81c&st=51w6lq1z&dl=0"
         }
       ]
     },
@@ -367,12 +375,16 @@ const achievementSection = {
       title: "Formation en Power BI",
       subtitle:
         "Participation à l'atelier OpenSourceDays VI2 à ENSA Khouribga pour la maîtrise de Power BI.",
+      description: "J'ai acquis des compétences avancées en visualisation et analyse de données, création de dashboards interactifs et automatisation de rapports.",
+      date: "Mai 2023",
       image: require("./assets/images/powerBILogo.png"),
       imageAlt: "Power BI Logo",
+      tags: ["Data", "Power BI"],
+      badge: "",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://www.dropbox.com/scl/fi/gqhdwqkazu6tv3trysigw/yosra-el-mimouni.png?rlkey=u15svg6ck9i7f3ex6cblzzumr&st=oue0fxv5&dl=0" // Ajoute le lien si disponible
+          name: "Voir la certification",
+          url: "https://www.dropbox.com/scl/fi/gqhdwqkazu6tv3trysigw/yosra-el-mimouni.png?rlkey=u15svg6ck9i7f3ex6cblzzumr&st=oue0fxv5&dl=0"
         }
       ]
     },
@@ -380,35 +392,136 @@ const achievementSection = {
       title: "Formation en Programmation Orientée Objet (POO) - Java",
       subtitle:
         "Approfondissement des concepts de la POO en Java via Saylor.org.",
+      description: "Cette certification atteste de ma maîtrise des principes de la programmation orientée objet et de leur application concrète en Java.",
+      date: "Décembre 2022",
       image: require("./assets/images/javaLogo.webp"),
       imageAlt: "Java Logo",
+      tags: ["Java", "POO"],
+      badge: "",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://www.dropbox.com/scl/fi/cbki3js10io6v4khlg86v/7408555977YE.pdf?rlkey=1p6mykk0zecxvbmbtmoononi0&st=ew606n69&dl=0" // Ajoute le lien vers ta certification
+          name: "Voir la certification",
+          url: "https://www.dropbox.com/scl/fi/cbki3js10io6v4khlg86v/7408555977YE.pdf?rlkey=1p6mykk0zecxvbmbtmoononi0&st=ew606n69&dl=0"
         }
       ]
     },
     {
-      title: "Formation en Python et C++",
+      title: "Formation en Python",
       subtitle:
-        "Certifications obtenues via Saylor.org attestant des compétences en Python et C++.",
-      image: require("./assets/images/pythonCppLogo.png"),
-      imageAlt: "Python & C++ Logo",
+        "Certification obtenue via Saylor.org attestant des compétences en Python.",
+      description: "J'ai consolidé mes bases en programmation Python à travers des exercices pratiques et des projets concrets.",
+      date: "Novembre 2022",
+      image: require("./assets/images/PYTHONLOGO.png"),
+      imageAlt: "Python Logo",
+      tags: ["Python"],
+      badge: "",
       footerLink: [
         {
           name: "Certification Python",
-          url: "https://www.dropbox.com/scl/fi/l9vaz5ld953fgdwyc9wox/4991861690YE.pdf?rlkey=kqdlmfm67t3eu3gicu7npfx1b&st=ljrhjih8&dl=0" // Ajoute le lien vers ta certification Python
-        },
+          url: "https://www.dropbox.com/scl/fi/l9vaz5ld953fgdwyc9wox/4991861690YE.pdf?rlkey=kqdlmfm67t3eu3gicu7npfx1b&st=ljrhjih8&dl=0"
+        }
+      ]
+    },
+    {
+      title: "Formation en C++",
+      subtitle:
+        "Certification obtenue via Saylor.org attestant des compétences en C++.",
+      description: "J'ai consolidé mes bases en programmation C++ à travers des exercices pratiques et des projets concrets.",
+      date: "Novembre 2022",
+      image: require("./assets/images/cpplogo.png"),
+      imageAlt: "C++ Logo",
+      tags: ["C++"],
+      badge: "",
+      footerLink: [
         {
           name: "Certification C++",
-          url: "https://www.dropbox.com/scl/fi/ts6nez7yk8ed1w8rt9y44/6383804297YE.pdf?rlkey=mvktp9p19yogui46zntae71y2&st=k28n601n&dl=0" // Ajoute le lien vers ta certification C++
+          url: "https://www.dropbox.com/scl/fi/ts6nez7yk8ed1w8rt9y44/6383804297YE.pdf?rlkey=mvktp9p19yogui46zntae71y2&st=k28n601n&dl=0"
+        }
+      ]
+    },
+    {
+      title: "Formation en MongoDB",
+      subtitle: "Certification obtenue via CodeSignal attestant des compétences en MongoDB.",
+      description: "J'ai appris à manipuler des bases de données NoSQL et à optimiser les requêtes pour des applications modernes.",
+      date: "2023",
+      image: require("./assets/images/pythonCppLogo.png"),
+      imageAlt: "MongoDB Logo",
+      tags: ["MongoDB", "NoSQL"],
+      badge: "",
+      footerLink: [
+        {
+          name: "Voir la certification",
+          url: ""
+        }
+      ]
+    },
+    {
+      title: "Formation en React",
+      subtitle: "Certification obtenue via ClassCentrale attestant des compétences en React.",
+      description: "J'ai appris à manipuler des bases de données NoSQL et à optimiser les requêtes pour des applications modernes.",
+      date: "2025",
+      image: require("./assets/images/ReactLogo (1).png"),
+      imageAlt: "React Logo",
+      tags: ["React"],
+      badge: "",
+      footerLink: [
+        {
+          name: "Voir la certification",
+          url: ""
         }
       ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
 };
+
+// Sort achievements by date (desc) using French month names
+const __frenchMonthToIndex = {
+  janvier: 0,
+  février: 1,
+  fevrier: 1,
+  mars: 2,
+  avril: 3,
+  mai: 4,
+  juin: 5,
+  juillet: 6,
+  août: 7,
+  aout: 7,
+  septembre: 8,
+  octobre: 9,
+  novembre: 10,
+  décembre: 11,
+  decembre: 11
+};
+
+function __parseFrenchDateToTs(dateStr) {
+  if (!dateStr || typeof dateStr !== "string") return 0;
+  const trimmed = dateStr.trim().toLowerCase();
+  // Cases: "2025" or "Mars 2024"
+  const yearOnlyMatch = trimmed.match(/^(\d{4})$/);
+  if (yearOnlyMatch) {
+    const y = parseInt(yearOnlyMatch[1], 10);
+    return new Date(y, 11, 31).getTime();
+  }
+  const parts = trimmed.split(/\s+/); // [mois, année]
+  if (parts.length >= 2) {
+    const month = __frenchMonthToIndex[parts[0]];
+    const year = parseInt(parts[1], 10);
+    if (!isNaN(year)) {
+      const m = typeof month === "number" ? month : 11; // default Dec if unknown
+      return new Date(year, m, 28).getTime();
+    }
+  }
+  // Fallback: try Date.parse
+  const fallback = Date.parse(dateStr);
+  return isNaN(fallback) ? 0 : fallback;
+}
+
+achievementSection.achievementsCards.sort((a, b) => {
+  const ta = __parseFrenchDateToTs(a.date);
+  const tb = __parseFrenchDateToTs(b.date);
+  return tb - ta; // newest first
+});
 
 // Blogs Section
 
@@ -433,7 +546,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Me Contacter 📩"),
   subtitle:
-    "Une question, une collaboration ou juste envie d’échanger ? N’hésitez pas à me contacter !",
+    "Une question, une collaboration ou juste envie d'échanger ? N'hésitez pas à me contacter !",
   number: "+212-675632773",
   email_address: "yosraelmimouni@gmail.com"
 };
