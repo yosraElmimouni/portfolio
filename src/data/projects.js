@@ -367,7 +367,7 @@ export const projects = [
      
     ],
     screenshots: [
-      require('../assets/images/page_ListeIntervention_tech.jpg'),
+      require('../assets/images/page_principale.jpg'),
       require('../assets/images/page_calendrier_Tech.jpg'),
       require('../assets/images/page_demandeur.jpg')
     ],
