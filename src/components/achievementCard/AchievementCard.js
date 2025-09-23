@@ -2,14 +2,6 @@ import React from "react";
 import "./AchievementCard.scss";
 
 export default function AchievementCard({cardInfo, isDark}) {
-  function openUrlInNewTab(url, name) {
-    if (!url) {
-      console.log(`URL for ${name} not found`);
-      return;
-    }
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
 
   return (
     <div className={isDark ? "dark-mode simple-card" : "simple-card"}>

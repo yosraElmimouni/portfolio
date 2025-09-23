@@ -99,82 +99,7 @@ const ContactLink = styled.a`
 `;
 
 // Removed form: only contact info will be displayed
-const ContactForm = styled(motion.form)``;
-
-const FormGroup = styled(motion.div)`
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-`;
-
-const Label = styled.label`
-  color: #64ffda;
-  font-size: 0.9rem;
-`;
-
-const Input = styled.input`
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(100, 255, 218, 0.1);
-  border-radius: 5px;
-  color: #ccd6f6;
-  transition: all 0.3s ease;
-  
-  &:focus {
-    outline: none;
-    border-color: #64ffda;
-    background: rgba(255, 255, 255, 0.1);
-  }
-`;
-
-const TextArea = styled.textarea`
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(100, 255, 218, 0.1);
-  border-radius: 5px;
-  color: #ccd6f6;
-  min-height: 150px;
-  resize: vertical;
-  transition: all 0.3s ease;
-  
-  &:focus {
-    outline: none;
-    border-color: #64ffda;
-    background: rgba(255, 255, 255, 0.1);
-  }
-`;
-
-const SubmitButton = styled(motion.button)`
-  padding: 1rem 2rem;
-  background: transparent;
-  border: 2px solid #64ffda;
-  color: #64ffda;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: rgba(100, 255, 218, 0.1);
-    transition: all 0.3s ease;
-  }
-  
-  &:hover {
-    background: rgba(100, 255, 218, 0.1);
-    
-    &::before {
-      left: 100%;
-    }
-  }
-`;
+// Form components removed (no message form)
 
 const BackgroundShapes = styled.div`
   position: absolute;
@@ -212,10 +137,7 @@ const Contact = () => {
     { size: 120, x: '70%', y: '80%' },
   ];
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission
-  };
+  // no-op
 
   return (
     <ContactSection id="contact">
