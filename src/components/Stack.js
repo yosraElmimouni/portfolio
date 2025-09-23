@@ -319,7 +319,6 @@ const Stack = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 animate={{ rotateY: flippedCards[index] ? 180 : 0 }}
-                transition={{ duration: 0.6, ease: "easeInOut" }}
               >
                 <CardFace>
                   <SkillIcon className={skill.icon} />
