@@ -379,7 +379,7 @@ const achievementSection = {
       description:
         "Validation des concepts de base de Docker: images, conteneurs, Dockerfile, volumes et réseaux; bonnes pratiques de conteneurisation et exécution locale.",
       date: "Février 2025",
-      image: require("./assets/images/docker-datascientist.png"),
+      image: require("./assets/images/docker.png"),
       imageAlt: "Certificat Docker - DataScientist.fr",
       tags: ["Docker"],
       badge: "",
