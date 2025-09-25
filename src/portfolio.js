@@ -69,6 +69,24 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-html5"
     },
     {
+      title: "Agile Project Management",
+      subtitle:
+        "HP LIFE – Certificate of Completion (online course)",
+      description:
+        "MVP, itératif vs incrémental, Scrum & Kanban, et application des approches agiles pour améliorer la gestion de projet et le développement produit.",
+      date: "Septembre 2024",
+      image: require("./assets/images/hp-life-agile.png"),
+      imageAlt: "HP LIFE Agile Project Management",
+      tags: ["Agile", "Scrum", "Kanban", "Gestion de projet"],
+      badge: "",
+      footerLink: [
+        {
+          name: "Voir la certification",
+          url: "https://www.dropbox.com/scl/fi/6lzjnxldalwy930pormal/certificate-1.pdf?rlkey=1xkr9o1yzuqdi5znl8yfd80bp&st=u82x0fge&dl=0"
+        }
+      ]
+    },
+    {
       skillName: "CSS3",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
@@ -355,6 +373,24 @@ const achievementSection = {
       ]
     },
     {
+      title: "Formation en Docker",
+      subtitle:
+        "Certification obtenue sur DataScientist.fr (Fondamentaux).",
+      description:
+        "Validation des concepts de base de Docker: images, conteneurs, Dockerfile, volumes et réseaux; bonnes pratiques de conteneurisation et exécution locale.",
+      date: "Février 2025",
+      image: require("./assets/images/docker-datascientist.png"),
+      imageAlt: "Certificat Docker - DataScientist.fr",
+      tags: ["Docker"],
+      badge: "",
+      footerLink: [
+        {
+          name: "Voir la certification",
+          url: "https://www.dropbox.com/scl/fi/q6tc8q1f8wxjkeyuanqk8/Introduction_-_Docker_yosra_el_mimouni_certificat.pdf?rlkey=7a4ml7c2kxvf8pbh37vnhj9rg&st=uiafzhye&dl=0"
+        }
+      ]
+    },
+    {
       title: "Formation en IA Générative",
       subtitle:
         "Formation réalisée avec Microsoft et LinkedIn sur les concepts et applications de l'intelligence artificielle générative.",
@@ -444,7 +480,7 @@ const achievementSection = {
       subtitle: "Certification obtenue via CodeSignal attestant des compétences en MongoDB.",
       description: "J'ai appris à manipuler des bases de données NoSQL et à optimiser les requêtes pour des applications modernes.",
       date: "2023",
-      image: require("./assets/images/pythonCppLogo.png"),
+      image: require("./assets/images/mongo.jpg"),
       imageAlt: "MongoDB Logo",
       tags: ["MongoDB", "NoSQL"],
       badge: "",
