@@ -368,7 +368,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Voir la certification",
-          url: "#"
+          url: "https://www.cloudskillsboost.google/public_profiles/21065ca7-d93d-4534-ad2b-5ef9653fb484/badges/18584849"
         }
       ]
     },
