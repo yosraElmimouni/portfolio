@@ -6,6 +6,7 @@
   margin: 0px auto;
   margin-top: 4rem;
 }
+
 .greet-main {
   width: 90%;
   padding: 20px 10px;
@@ -17,11 +18,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 4rem;
 }
 
 .greeting-text-div {
   flex: 1;
   padding-right: 2rem;
+  animation: slideInLeft 0.8s ease-out;
 }
 
 .greeting-image-div {
@@ -29,19 +32,46 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: slideInRight 0.8s ease-out;
 }
 
 .profile-image-container {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+  width: 320px;
+  height: 320px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  
+  box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15),
+              0 0 40px rgba(26, 58, 82, 0.2);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  border: 2px solid rgba(0, 212, 255, 0.2);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+
   &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 30px 80px rgba(0, 212, 255, 0.25),
+                0 0 50px rgba(26, 58, 82, 0.3);
+    border-color: rgba(0, 212, 255, 0.4);
+
+    &::before {
+      opacity: 1;
+    }
+
+    .profile-image {
+      transform: scale(1.08);
+    }
   }
 }
 
@@ -49,31 +79,69 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
 .greeting-text {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: #000;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: $titleColor;
+  line-height: 1.2;
+  background: linear-gradient(135deg, $primaryColor 0%, $accentColor 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeInDown 0.8s ease-out 0.2s both;
 }
 
 .greeting-text-p {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1.15rem;
+  line-height: 1.8;
   margin-bottom: 2rem;
-  color: #666;
+  color: $subTitle;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
 .button-greeting-div {
   display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+
+  a, button {
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    border: 2px solid transparent;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
 }
 
 .download-link-button {
   text-decoration: none;
+  
+  button {
+    background: linear-gradient(135deg, $primaryColor 0%, $primaryLight 100%);
+    color: white;
+    box-shadow: 0 10px 30px rgba(26, 58, 82, 0.3);
+
+    &:hover {
+      box-shadow: 0 15px 40px rgba(26, 58, 82, 0.4);
+      background: linear-gradient(135deg, $primaryLight 0%, $primaryColor 100%);
+    }
+  }
 }
 
 .wave-emoji {
@@ -82,6 +150,7 @@
   animation-name: wave;
   display: inline-block;
   transform-origin: 70% 70%;
+  font-size: 1.2em;
 }
 
 @keyframes wave {
@@ -111,21 +180,72 @@
   }
 }
 
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Dark mode styles */
 .dark-mode {
   .greeting-text {
-    color: #fff;
+    background: linear-gradient(135deg, $accentColor 0%, #00ffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
-  
+
   .greeting-text-p {
-    color: #ccc;
+    color: rgba(248, 249, 250, 0.7);
   }
-  
+
   .profile-image-container {
-    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
-    
+    box-shadow: 0 20px 60px rgba(0, 212, 255, 0.2),
+                0 0 40px rgba(0, 212, 255, 0.1);
+    border-color: rgba(0, 212, 255, 0.3);
+
     &:hover {
-      box-shadow: 0 15px 40px rgba(255, 255, 255, 0.2);
+      box-shadow: 0 30px 80px rgba(0, 212, 255, 0.3),
+                  0 0 50px rgba(0, 212, 255, 0.2);
+      border-color: rgba(0, 212, 255, 0.5);
     }
   }
 }
@@ -133,43 +253,86 @@
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
-    font-size: 50px;
+    font-size: 2.8rem;
   }
+
   .greeting-text-p {
-    font-size: 20px;
+    font-size: 1.05rem;
+  }
+
+  .profile-image-container {
+    width: 280px;
+    height: 280px;
   }
 }
+
 @media (max-width: 768px) {
   .greeting-main {
     flex-direction: column-reverse;
     text-align: center;
+    gap: 2rem;
   }
-  
+
   .greeting-text-div {
     padding-right: 0;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
-  
+
   .profile-image-container {
     width: 250px;
     height: 250px;
+    border-radius: 15px;
   }
-  
+
   .greeting-text {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
   }
-  
+
   .greeting-text-p {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
   }
-  
+
   .button-greeting-div {
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    a, button {
+      padding: 10px 24px;
+      font-size: 0.95rem;
+    }
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .main {
-    width: auto;
+    width: 95%;
+    margin-top: 2rem;
+  }
+
+  .greeting-text {
+    font-size: 1.8rem;
+  }
+
+  .greeting-text-p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .profile-image-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .button-greeting-div {
+    flex-direction: column;
+    width: 100%;
+
+    a, button {
+      width: 100%;
+      justify-content: center;
+    }
   }
 }

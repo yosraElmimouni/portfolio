@@ -26,7 +26,7 @@ const greeting = {
 
     "Passionné par l'ingénierie logicielle, l'IA et le développement full-stack, je transforme les idées en solutions intelligentes et efficaces. Fort de mon expertise en Python, Java, C++ et JavaScript, je crée des applications fluides en utilisant FastAPI, Spring Boot et JEE. Toujours curieux et animé par l'innovation, j'adore transformer les défis en opportunités de créer, d'optimiser et d'inspirer. 🚀✨"    ),
   resumeLink:
-    "https://www.dropbox.com/scl/fi/fsyutycg6m82gc8s2agl2/cv_yosraelmimouni.pdf?rlkey=v4gbr64s5pkrld2ejpqkmh8vk&st=jc6nfce5&dl=0", // Set to empty to hide the button
+    "https://www.dropbox.com/scl/fi/1pj9l7nvr0edk2vabbsuv/CV_yosra_el_mimouni__DEV_.pdf?rlkey=b47p3syzm8edc3nuvthbn3w46&st=0anzrhme&dl=0", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 

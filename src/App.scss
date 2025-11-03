@@ -4,14 +4,17 @@
   text-align: center;
   width: 100%;
   overflow-x: hidden;
+  background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+  min-height: 100vh;
 }
 
 .App-logo {
   height: 40vmin;
+  animation: fadeInDown 0.8s ease-out;
 }
 
 .App-header {
-  background-color: $appHeaderBG;
+  background: linear-gradient(135deg, $darkBackground 0%, rgba(26, 58, 82, 0.5) 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,12 +22,119 @@
   justify-content: center;
   font-size: calc(0.625rem + 2vmin);
   color: $textColorDark;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(26, 58, 82, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+  }
 }
 
 .App-link {
   color: $appLink;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 2px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: $appLink;
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 .subTitle {
   color: $subTitle;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Global responsive styles */
+@media (max-width: 768px) {
+  .App-header {
+    min-height: auto;
+    padding: 40px 20px;
+  }
+
+  .subTitle {
+    font-size: 0.95rem;
+    padding: 0 20px;
+  }
 }
