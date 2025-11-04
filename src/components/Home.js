@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import * as THREE from 'three';
-import profileImg from '../assets/images/imagePortfolio.png';
+import profileImg from '../assets/images/CV.png';
 import BlurText from './BlurText';
 import { greeting } from '../portfolio';
 
