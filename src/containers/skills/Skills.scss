@@ -29,11 +29,11 @@
   img {
     max-width: 100%;
     height: auto;
-    filter: drop-shadow(0 10px 30px rgba(0, 212, 255, 0.15));
+    filter: drop-shadow(0 10px 30px rgba(0, 255, 196, 0.15));
     transition: all 0.3s ease;
 
     &:hover {
-      filter: drop-shadow(0 15px 40px rgba(0, 212, 255, 0.25));
+      filter: drop-shadow(0 15px 40px rgba(0, 255, 196, 0.25));
       transform: scale(1.02);
     }
   }
@@ -43,8 +43,8 @@
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
-  color: $titleColor;
-  background: linear-gradient(135deg, $primaryColor 0%, $accentColor 100%);
+  color: var(--accentColor);
+  background: linear-gradient(135deg, var(--accentColor) 0%, #00a880 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -54,14 +54,14 @@
 .skills-text {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: $textColor;
+  color: var(--textColorDark);
   margin-bottom: 1.5rem;
   font-weight: 500;
 }
 
 .skills-text-subtitle {
   font-size: 1rem;
-  color: $subTitle;
+  color: var(--subTitle);
   font-weight: 400;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -69,12 +69,12 @@
 }
 
 .subTitle {
-  color: $subTitle;
+  color: var(--subTitle);
   font-size: 1rem;
   letter-spacing: 0.5px;
 }
 
-/* Skills List */
+/* Skills List - Dark Mode with Neon Accents */
 .skills-list {
   display: flex;
   flex-direction: column;
@@ -86,21 +86,22 @@
     gap: 1rem;
     padding: 0.75rem 1rem;
     border-radius: 8px;
-    background: rgba(0, 212, 255, 0.05);
-    border-left: 3px solid $accentColor;
+    background: rgba(0, 255, 196, 0.08);
+    border-left: 3px solid var(--accentColor);
     transition: all 0.3s ease;
     font-size: 1rem;
-    color: $textColor;
+    color: var(--textColorDark);
 
     &:hover {
-      background: rgba(0, 212, 255, 0.1);
+      background: rgba(0, 255, 196, 0.15);
       transform: translateX(5px);
-      box-shadow: 0 5px 15px rgba(0, 212, 255, 0.1);
+      box-shadow: 0 5px 15px rgba(0, 255, 196, 0.15);
+      border-left-color: var(--accentSecondary);
     }
 
     &::before {
       content: '✓';
-      color: $accentColor;
+      color: var(--accentColor);
       font-weight: bold;
       font-size: 1.2rem;
     }
@@ -110,26 +111,26 @@
 /* Dark mode */
 .dark-mode {
   .skills-heading {
-    background: linear-gradient(135deg, $accentColor 0%, #00ffff 100%);
+    background: linear-gradient(135deg, var(--accentColor) 0%, #00a880 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .skills-text {
-    color: rgba(248, 249, 250, 0.9);
+    color: var(--textColorDark);
   }
 
   .skills-text-subtitle {
-    color: rgba(248, 249, 250, 0.6);
+    color: var(--subTitle);
   }
 
   .skills-list li {
-    background: rgba(0, 212, 255, 0.08);
-    color: rgba(248, 249, 250, 0.9);
+    background: rgba(0, 255, 196, 0.08);
+    color: var(--textColorDark);
 
     &:hover {
-      background: rgba(0, 212, 255, 0.15);
+      background: rgba(0, 255, 196, 0.15);
     }
   }
 }

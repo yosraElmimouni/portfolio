@@ -1,102 +1,85 @@
-/* Modern Professional Color Palette for Yosra El Mimouni's Portfolio */
-
+/* Modern Expressive Minimalism Color Palette for Yosra El Mimouni's Portfolio */
 // Primary Colors - Modern & Professional
-$primaryColor: #1a3a52; // Deep Navy Blue
-$primaryLight: #2d5a7b; // Lighter Navy
-$accentColor: #00d4ff; // Vibrant Cyan/Teal
-$accentSecondary: #ffd700; // Gold Accent
-
+$primaryColor: #121212; // Deep Black/Dark Gray for Dark Mode background
+$primaryLight: #1e1e1e; // Slightly lighter dark background
+$accentColor: #00ffc4; // Vibrant Neon Green/Cyan for a fun, techy accent
+$accentSecondary: #ff6b6b; // Coral/Red for secondary accent or hover states
 // button colors
-$buttonColor: #1a3a52;
-$buttonHover: #2d5a7b;
-$topButtonHover: #00d4ff;
-
-// text colors light theme
-$titleColor: #1a3a52;
-$textColor: #2c3e50;
-$subTitle: #7f8c8d;
-$cardSubtitle: #5a6c7d;
-$talkCardSubTitle: #7f8287;
-$blogCardTitleColor: #1a3a52;
-
+$buttonColor: $accentColor;
+$buttonHover: #00e6b8;
+$topButtonHover: $accentSecondary;
+// text colors light theme (for potential light mode)
+$titleColor: #121212;
+$textColor: #333333;
+$subTitle: #666666;
+$cardSubtitle: #777777;
+$talkCardSubTitle: #888888;
+$blogCardTitleColor: #121212;
 // text color dark theme
-$textColorDark: #f8f9fa;
-
+$textColorDark: #f0f0f0; // Light text on dark background
 // toggle switch colors
-$toggleCheck: #00d4ff;
-$toggleSwitchSliderBG: #ccc;
-
+$toggleCheck: $accentColor;
+$toggleSwitchSliderBG: #333333;
 // githubRepo specific colors
-$githubRepoCardLanguageColorBG: #1a3a52;
-$githubRepoCardColor: rgb(88, 96, 105);
-$githubRepoCardRepoCardStatsColor: rgb(106, 115, 125);
-$githubRepoCardRepoNameColor: #1a3a52;
-$githubProfileCardLocationTS: #ffd700;
-$githubProfileCardBorder: #00d4ff;
-
+$githubRepoCardLanguageColorBG: $primaryLight;
+$githubRepoCardColor: #cccccc;
+$githubRepoCardRepoCardStatsColor: #aaaaaa;
+$githubRepoCardRepoNameColor: $accentColor;
+$githubProfileCardLocationTS: $accentSecondary;
+$githubProfileCardBorder: $accentColor;
 // light background colors
 $lightBackground1: #ffffff;
-$lightBackground2: #f8f9fa;
-$lightBackground3: #ecf0f1;
-$blogCardContainerColor: #586069;
-
+$lightBackground2: #f8f8f8;
+$lightBackground3: #eeeeee;
+$blogCardContainerColor: #f0f0f0;
 // dark background colors
-$darkBackground: #0f1419;
-
+$darkBackground: $primaryColor;
 // light theme box shadows
-$lightBoxShadowDark: rgba(26, 58, 82, 0.15);
-$lightBoxShadow: rgba(26, 58, 82, 0.08);
-$lightBoxShadowDarker: rgba(26, 58, 82, 0.2);
-
+$lightBoxShadowDark: rgba(0, 0, 0, 0.15);
+$lightBoxShadow: rgba(0, 0, 0, 0.08);
+$lightBoxShadowDarker: rgba(0, 0, 0, 0.2);
 // dark theme box shadows
-$darkBoxShadow: #d9dbdf;
-$darkBoxShadow2: #ffffff;
-
-// linear gradients - Modern & Elegant
+$darkBoxShadow: rgba(255, 255, 255, 0.1);
+$darkBoxShadow2: rgba(255, 255, 255, 0.05);
+// linear gradients - Modern & Techy
 $experienceCardBlurredDivLG: linear-gradient(
   135deg,
-  rgba(26, 58, 82, 0.4),
-  rgba(0, 212, 255, 0.1)
+  rgba(0, 255, 196, 0.1),
+  rgba(255, 107, 107, 0.05)
 );
 $experienceCardBannerLG: linear-gradient(
   135deg,
-  rgba(26, 58, 82, 0.7),
-  rgba(0, 212, 255, 0.3)
+  rgba(0, 255, 196, 0.3),
+  rgba(255, 107, 107, 0.1)
 );
-
 // Premium gradients
-$premiumGradient: linear-gradient(135deg, #1a3a52 0%, #2d5a7b 100%);
-$accentGradient: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+$premiumGradient: linear-gradient(135deg, $primaryColor 0%, $primaryLight 100%);
+$accentGradient: linear-gradient(135deg, $accentColor 0%, #00a880 100%);
 $goldGradient: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
-
 // borders
-$progressBarBackground: #ecf0f1;
-$lightBorder1: rgba(26, 58, 82, 0.1);
-$educationCardBorder: #00d4ff;
-
+$progressBarBackground: #333333;
+$lightBorder1: rgba(0, 0, 0, 0.1);
+$educationCardBorder: $accentColor;
 // hovers
-$achievementCertificateCardHoverDark: rgba(0, 212, 255, 0.1);
-$blogCardHoverSmallColor: rgba(255, 255, 255, 0.9);
-$headerHoverBG: #f0f4f8;
-$contactDetailHoverTS: #00d4ff;
-
+$achievementCertificateCardHoverDark: rgba(0, 255, 196, 0.1);
+$blogCardHoverSmallColor: rgba(30, 30, 30, 0.9);
+$headerHoverBG: #1e1e1e;
+$contactDetailHoverTS: $accentColor;
 // misc backgrounds
-$progressBarSpanBG: #00d4ff;
-$iconBackground: #1a3a52;
-$appHeaderBG: #0f1419;
-
+$progressBarSpanBG: $accentColor;
+$iconBackground: $primaryLight;
+$appHeaderBG: $primaryColor;
 // misc colors
-$skillsColor: #00d4ff;
-$appLink: #00d4ff;
-
+$skillsColor: $accentColor;
+$appLink: $accentColor;
 // social media icons
 $faceBook: #3b5998;
 $linkedin: #0e76a8;
-$github: #333;
+$github: #f0f0f0; // White/Light for dark background
 $gitlab: #fca326;
 $google: #ea4335;
 $twitter: #1da1f2;
-$medium: #000;
+$medium: #f0f0f0; // White/Light for dark background
 $stackoverflow: #f48024;
 $instagram: #c13584;
 $kaggle: #20beff;

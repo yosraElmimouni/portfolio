@@ -5,8 +5,8 @@
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 2rem;
-  color: $titleColor;
-  background: linear-gradient(135deg, $primaryColor 0%, $accentColor 100%);
+  color: var(--accentColor);
+  background: linear-gradient(135deg, var(--accentColor) 0%, #00a880 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -15,7 +15,7 @@
 
 .project-subtitle {
   font-size: 1.1rem;
-  color: $subTitle;
+  color: var(--subTitle);
   margin-bottom: 3rem;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -29,12 +29,12 @@
     max-width: 100%;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 255, 196, 0.15);
     transition: all 0.3s ease;
 
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(0, 212, 255, 0.25);
+      box-shadow: 0 15px 40px rgba(0, 255, 196, 0.25);
     }
   }
 }
@@ -46,14 +46,14 @@
   margin-top: 2rem;
 }
 
-/* Project Card Styles */
+/* Project Card Styles - Dark Mode with Neon Accents */
 .repo-card {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 250, 0.95) 100%);
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.95) 0%, rgba(18, 18, 18, 0.95) 100%);
   border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 10px 30px rgba(26, 58, 82, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 255, 196, 0.1);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(0, 212, 255, 0.1);
+  border: 1px solid rgba(0, 255, 196, 0.2);
   position: relative;
   overflow: hidden;
   animation: scaleIn 0.6s ease-out;
@@ -65,125 +65,115 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 196, 0.2), transparent);
     transition: left 0.5s ease;
   }
 
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(0, 212, 255, 0.2);
-    border-color: rgba(0, 212, 255, 0.3);
+    box-shadow: 0 20px 50px rgba(0, 255, 196, 0.3);
+    border-color: rgba(0, 255, 196, 0.5);
 
     &::before {
       left: 100%;
     }
+  }
+
+  .repo-name-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
 
     .repo-name {
-      color: $accentColor;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--accentColor);
+      word-break: break-word;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var(--accentSecondary);
+      }
     }
 
-    .repo-description {
-      color: $textColor;
+    .repo-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: rgba(0, 255, 196, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accentColor);
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: rgba(0, 255, 196, 0.2);
+        transform: rotate(20deg);
+      }
     }
   }
 
-  &.dark-mode {
-    background: linear-gradient(135deg, rgba(26, 58, 82, 0.2) 0%, rgba(15, 20, 25, 0.3) 100%);
-    border-color: rgba(0, 212, 255, 0.2);
-
-    &:hover {
-      border-color: rgba(0, 212, 255, 0.4);
-    }
+  .repo-description {
+    font-size: 0.95rem;
+    color: var(--textColorDark);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    opacity: 0.9;
   }
-}
 
-.repo-name {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: $titleColor;
-  margin-bottom: 0.8rem;
-  transition: color 0.3s ease;
-  word-break: break-word;
-}
-
-.repo-description {
-  font-size: 0.95rem;
-  color: $cardSubtitle;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  transition: color 0.3s ease;
-}
-
-.repo-languages {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.repo-language {
-  display: inline-block;
-  padding: 0.4rem 0.8rem;
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
-  border: 1px solid rgba(0, 212, 255, 0.2);
-  border-radius: 20px;
-  font-size: 0.8rem;
-  color: $accentColor;
-  font-weight: 600;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(0, 212, 255, 0.1) 100%);
-    border-color: rgba(0, 212, 255, 0.4);
-    transform: scale(1.05);
-  }
-}
-
-.repo-stats {
-  display: flex;
-  gap: 1.5rem;
-  font-size: 0.9rem;
-  color: $subTitle;
-  margin-bottom: 1.5rem;
-
-  .stat {
+  .repo-languages {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 0.5rem;
+    margin-bottom: 1rem;
 
-    &:hover {
-      color: $accentColor;
+    .language-tag {
+      background: rgba(0, 255, 196, 0.15);
+      color: var(--accentColor);
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border: 1px solid rgba(0, 255, 196, 0.3);
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: rgba(0, 255, 196, 0.25);
+        border-color: var(--accentColor);
+      }
+    }
+  }
+
+  .repo-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 255, 196, 0.1);
+
+    .stat {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--subTitle);
+
+      svg {
+        width: 16px;
+        height: 16px;
+        color: var(--accentColor);
+      }
     }
   }
 }
 
-.repo-link {
-  display: inline-block;
-  padding: 0.7rem 1.5rem;
-  background: linear-gradient(135deg, $primaryColor 0%, $primaryLight 100%);
-  color: white;
-  border-radius: 8px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(26, 58, 82, 0.3);
-    background: linear-gradient(135deg, $primaryLight 0%, $primaryColor 100%);
-  }
-
-  &:active {
-    transform: translateY(0);
-  }
-}
-
-/* Animations */
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(-20px);
   }
   to {
     opacity: 1;
@@ -194,7 +184,7 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -213,110 +203,18 @@
   }
 }
 
-/* Dark mode */
-.dark-mode {
-  .project-title {
-    background: linear-gradient(135deg, $accentColor 0%, #00ffff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  .project-subtitle {
-    color: rgba(248, 249, 250, 0.6);
-  }
-
-  .repo-card {
-    background: linear-gradient(135deg, rgba(26, 58, 82, 0.15) 0%, rgba(15, 20, 25, 0.25) 100%);
-    border-color: rgba(0, 212, 255, 0.2);
-
-    &:hover {
-      border-color: rgba(0, 212, 255, 0.4);
-    }
-  }
-
-  .repo-name {
-    color: rgba(248, 249, 250, 0.95);
-  }
-
-  .repo-description {
-    color: rgba(248, 249, 250, 0.7);
-  }
-
-  .repo-stats {
-    color: rgba(248, 249, 250, 0.5);
-  }
-}
-
-/* Media Query */
-@media (max-width: 1380px) {
-  .project-title {
-    font-size: 2.8rem;
-  }
-
-  .repo-cards-div-main {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
-  }
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
   .project-title {
-    font-size: 2.2rem;
-    text-align: center;
-  }
-
-  .project-subtitle {
-    text-align: center;
-    font-size: 1rem;
-  }
-
-  .repo-cards-div-main {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    padding: 0 15px;
-  }
-
-  .repo-card {
-    padding: 1.5rem;
-  }
-
-  .repo-name {
-    font-size: 1.1rem;
-  }
-
-  .repo-description {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .project-title {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 
   .repo-cards-div-main {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .repo-card {
-    padding: 1.2rem;
-  }
-
-  .repo-name {
-    font-size: 1rem;
-  }
-
-  .repo-description {
-    font-size: 0.85rem;
-  }
-
-  .repo-languages {
-    gap: 0.4rem;
-  }
-
-  .repo-language {
-    font-size: 0.75rem;
-    padding: 0.3rem 0.6rem;
+    padding: 1.5rem;
   }
 }
