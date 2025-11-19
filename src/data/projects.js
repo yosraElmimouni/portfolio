@@ -166,46 +166,6 @@ export const projects = [
     conclusion: `Ce projet offre une gestion efficace des cours et des utilisateurs, tout en améliorant l'expérience globale des formateurs et des apprenants. Perspectives : optimisation de l'UI, IA pour recommandations, notifications, version mobile.`
   },
   {
-    id: 'python-games',
-    title: "Jeux en Python avec Interface Graphique",
-    description: "Série de jeux interactifs en Python avec Tkinter (Tic-Tac-Toe, Pendu, Puissance 4, Quiz Mathématique).",
-    images: [
-      require('../assets/images/pythonGamesLogo.png')
-    ],
-    screenshots: [
-      require('../assets/images/pagejeux.jpg'),
-      require('../assets/images/pagepuzzlz.jpg'),
-    ],
-    technologies: ['Python', 'Tkinter'],
-    report: '',
-    github: '',
-    demo: 'https://yosraelmimouni.framer.website/pepper-website-made-in-framer',
-    objectif: `Développer une série de jeux classiques en Python avec interface graphique, pour offrir une expérience ludique et interactive (Tic-Tac-Toe, Pendu, Puissance 4, Quiz Mathématique).`,
-    definition: `Chaque jeu est développé en Python avec la bibliothèque Tkinter pour l'interface graphique. L'accent est mis sur la simplicité, l'ergonomie et l'interactivité.`,
-    etudeConceptuelle: [
-      {
-        titre: 'Introduction',
-        contenu: `Ce projet regroupe plusieurs jeux classiques développés en Python, chacun avec une interface graphique simple et intuitive.`
-      },
-      {
-        titre: 'Spécifications',
-        contenu: `Jeux inclus : Tic-Tac-Toe, Pendu, Puissance 4, Quiz Mathématique. Interface : Tkinter. Langage : Python.`
-      }
-    ],
-    fonctionnalites: [
-      "Jeu du Tic-Tac-Toe (morpion) à deux joueurs.",
-      "Jeu du Pendu avec choix de mots aléatoires.",
-      "Puissance 4 avec grille interactive.",
-      "Quiz Mathématique avec score et correction instantanée."
-    ],
-    conclusion: `Ce projet a permis de mettre en pratique la programmation orientée objet et la gestion d'interfaces graphiques en Python, tout en créant des jeux ludiques et éducatifs.`,
-    perspectives: [
-      "Ajout de nouveaux jeux et modes multijoueurs.",
-      "Amélioration de l'interface graphique.",
-      "Export des scores et statistiques des joueurs."
-    ]
-  },
-  {
     id: 'gestion-stock-vehicules',
     title: "Système de Gestion de Stock de Véhicules",
     description: "Application web complète pour l'optimisation de la gestion de stock de véhicules neufs et d'occasion avec méthode AMDEC.",
