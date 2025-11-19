@@ -11,10 +11,12 @@ body {
   font-family: 'Inter', 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
-  color: #f8f9fa;
+  /* Utilisation des variables SCSS pour la couleur de fond */
+  background-color: #0A192F; /* Dark mode default from _globalColor.scss */
+  color: #CCD6F6; /* Dark mode default text color from _globalColor.scss */
   line-height: 1.7;
   letter-spacing: 0.3px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 html {
@@ -49,6 +51,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Scrollbar Styles - Modern */
+
+/* Utilisation des couleurs d'accentuation */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #64FFDA 0%, #41F0C9 100%);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #112240 0%, #0A192F 100%);
+  box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+}
 ::-webkit-scrollbar {
   width: 12px;
   height: 12px;

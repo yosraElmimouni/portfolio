@@ -1,6 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, useContext} from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
+import About from "../components/About";
 import Skills from "./skills/Skills";
 import StackProgress from "./skillProgress/skillProgress";
 import WorkExperience from "./workExperience/WorkExperience";
@@ -29,6 +30,14 @@ const Main = () => {
     useState(true);
 
   useEffect(() => {
+    if (isDark) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  }, [isDark]);
+
+  useEffect(() => {
     if (splashScreen.enabled) {
       const splashTimer = setTimeout(
         () => setIsShowingSplashAnimation(false),
@@ -54,6 +63,9 @@ const Main = () => {
             <Header />
             <div className="section-animate">
               <Greeting />
+            </div>
+            <div className="section-animate-left">
+              <About />
             </div>
             <div className="section-animate-left">
               <Skills />

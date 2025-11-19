@@ -23,7 +23,7 @@ export default function Greeting() {
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
                 {" "}
-                {greeting.title}{" "}
+                <span className="typing-text">{greeting.title}</span>{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
               <p
@@ -38,14 +38,20 @@ export default function Greeting() {
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
+                <Button text="Contactez-moi" href="#contact" />
+<a
+                  href="#projects"
+                  className="download-link-button"
+                >
+                  <Button text="Voir mes projets" />
+                </a>
                 {greeting.resumeLink && (
                   <a
-                    href="https://www.dropbox.com/scl/fi/fsyutycg6m82gc8s2agl2/cv_yosraelmimouni.pdf?rlkey=v4gbr64s5pkrld2ejpqkmh8vk&st=jc6nfce5&dl=1"
+                    href={greeting.resumeLink}
                     download="resume.pdf"
                     className="download-link-button"
                   >
-                    <Button text="Download my resume" />
+                    <Button text="Télécharger CV" />
                   </a>
                 )}
               </div>

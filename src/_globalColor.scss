@@ -1,22 +1,22 @@
 /* Modern Expressive Minimalism Color Palette for Yosra El Mimouni's Portfolio */
 // Primary Colors - Modern & Professional
-$primaryColor: #121212; // Deep Black/Dark Gray for Dark Mode background
-$primaryLight: #1e1e1e; // Slightly lighter dark background
-$accentColor: #00ffc4; // Vibrant Neon Green/Cyan for a fun, techy accent
-$accentSecondary: #ff6b6b; // Coral/Red for secondary accent or hover states
+$primaryColor: #0A192F; // Deep Navy Blue for Dark Mode background (Inspired by modern tech portfolios)
+$primaryLight: #112240; // Slightly lighter dark background
+$accentColor: #64FFDA; // Vibrant Aqua/Mint for a modern, techy accent
+$accentSecondary: #F97316; // Orange for secondary accent or hover states
 // button colors
 $buttonColor: $accentColor;
-$buttonHover: #00e6b8;
-$topButtonHover: $accentSecondary;
+$buttonHover: #41F0C9;
+$topButtonHover: #F97316;
 // text colors light theme (for potential light mode)
 $titleColor: #121212;
 $textColor: #333333;
-$subTitle: #666666;
+$subTitle: #8892B0; // Slate gray for subtitles and secondary text
 $cardSubtitle: #777777;
 $talkCardSubTitle: #888888;
 $blogCardTitleColor: #121212;
 // text color dark theme
-$textColorDark: #f0f0f0; // Light text on dark background
+$textColorDark: #CCD6F6; // Light gray text on dark background
 // toggle switch colors
 $toggleCheck: $accentColor;
 $toggleSwitchSliderBG: #333333;
@@ -44,13 +44,13 @@ $darkBoxShadow2: rgba(255, 255, 255, 0.05);
 // linear gradients - Modern & Techy
 $experienceCardBlurredDivLG: linear-gradient(
   135deg,
-  rgba(0, 255, 196, 0.1),
-  rgba(255, 107, 107, 0.05)
+  rgba(100, 255, 218, 0.1),
+  rgba(249, 115, 22, 0.05)
 );
 $experienceCardBannerLG: linear-gradient(
   135deg,
-  rgba(0, 255, 196, 0.3),
-  rgba(255, 107, 107, 0.1)
+  rgba(100, 255, 218, 0.3),
+  rgba(249, 115, 22, 0.1)
 );
 // Premium gradients
 $premiumGradient: linear-gradient(135deg, $primaryColor 0%, $primaryLight 100%);
@@ -75,11 +75,11 @@ $appLink: $accentColor;
 // social media icons
 $faceBook: #3b5998;
 $linkedin: #0e76a8;
-$github: #f0f0f0; // White/Light for dark background
+$github: #CCD6F6; // Light gray for dark background
 $gitlab: #fca326;
 $google: #ea4335;
 $twitter: #1da1f2;
-$medium: #f0f0f0; // White/Light for dark background
+$medium: #CCD6F6; // Light gray for dark background
 $stackoverflow: #f48024;
 $instagram: #c13584;
 $kaggle: #20beff;

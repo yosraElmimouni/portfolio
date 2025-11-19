@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 const AboutSection = styled.section`
-  min-height: 200vh;
+  min-height: 100vh;
   padding: 6rem 2rem;
-  background: #0a192f;
-  color: #ccd6f6;
+  background: #0A192F;
+  color: #CCD6F6;
   position: relative;
 `;
 
@@ -19,7 +19,7 @@ const AboutContainer = styled.div`
 
 const Title = styled(motion.h2)`
   font-size: 2.5rem;
-  color: #64ffda;
+  color: #64FFDA;
   margin-bottom: 2.5rem;
   text-align: center;
   position: relative;
@@ -31,18 +31,18 @@ const Title = styled(motion.h2)`
     transform: translateX(-50%);
     width: 50px;
     height: 3px;
-    background: #64ffda;
+    background: #64FFDA;
   }
 `;
 
 const AboutTextBlock = styled(motion.div)`
-  background: rgba(10,25,47,0.96);
+  background: rgba(17, 34, 64, 0.96);
   border-radius: 18px;
   padding: 1.2rem 1.5rem;
   margin-bottom: 28px;
   font-size: 1.13rem;
-  color: #ccd6f6;
-  box-shadow: 0 4px 24px 0 rgba(100,255,218,0.13);
+  color: #CCD6F6;
+  box-shadow: 0 4px 24px 0 rgba(100, 255, 218, 0.13);
   line-height: 1.7;
   position: sticky;
   top: ${({ idx }) => idx * 80}px;
@@ -53,8 +53,8 @@ const AboutTextBlock = styled(motion.div)`
   transform-style: preserve-3d;
   
   &:hover {
-    background: rgba(100,255,218,0.12);
-    box-shadow: 0 8px 32px 0 rgba(100,255,218,0.18);
+    background: rgba(100, 255, 218, 0.12);
+    box-shadow: 0 8px 32px 0 rgba(100, 255, 218, 0.18);
     transform: translateY(-2px) scale(1.01);
   }
 `;

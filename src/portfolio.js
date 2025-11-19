@@ -21,10 +21,10 @@ const illustration = {
 
 const greeting = {
   username: "Yosra El mimouni",
-  title: "Hi all, I'm yosra",
+  title: "Développeuse Full-Stack & Ingénieure IA",
   subTitle: emoji(
 
-    "Passionné par l'ingénierie logicielle, l'IA et le développement full-stack, je transforme les idées en solutions intelligentes et efficaces. Fort de mon expertise en Python, Java, C++ et JavaScript, je crée des applications fluides en utilisant FastAPI, Spring Boot et JEE. Toujours curieux et animé par l'innovation, j'adore transformer les défis en opportunités de créer, d'optimiser et d'inspirer. 🚀✨"    ),
+    "Je transforme les idées en solutions logicielles intelligentes et efficaces. Forte de mon expertise en développement Full-Stack (Java EE, Spring Boot, FastAPI) et en Intelligence Artificielle, je suis passionnée par la création d'expériences utilisateur fluides et l'optimisation des performances. Mon objectif : allier l'élégance du code à l'utilité fonctionnelle. 🚀✨"    ),
   resumeLink:
     "https://www.dropbox.com/scl/fi/1pj9l7nvr0edk2vabbsuv/CV_yosra_el_mimouni__DEV_.pdf?rlkey=b47p3syzm8edc3nuvthbn3w46&st=0anzrhme&dl=0", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -248,8 +248,8 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "false", // Désactivé pour utiliser les données locales de projets.js
+  display: false // Désactivé car nous utilisons les données locales (bigProjects)
 };
 // Some big projects you have worked on
 
