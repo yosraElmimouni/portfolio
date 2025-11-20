@@ -324,6 +324,22 @@ const bigProjects = {
           url: "https://www.dropbox.com/scl/fi/roaermgok1ghcpev80094/RPR2.pdf?rlkey=dz6n3jqv1jowb3188ee9gwfvk&st=klz41gbc&dl=0"
         }
       ]
+    },
+    {
+      image: require("./assets/images/pythonGamesLogo.png"), // Remplace par le bon logo
+      projectName: "Jeux en Python avec Interface Graphique",
+      projectDesc: "Développement d'une série de jeux interactifs en Python avec Tkinter, incluant Tic-Tac-Toe, le Pendu, Puissance 4 et un Quiz Mathématique.",
+      descBullets: [
+        "Interface graphique développée avec Tkinter pour une meilleure interaction utilisateur",
+        "Utilisation de `random` pour générer des éléments aléatoires (ex: mots, nombres)",
+        "Gestion des événements et des conditions de victoire pour chaque jeu",
+        "Utilisation des bibliothèques `messagebox` et `ttk` pour améliorer l'expérience utilisateur"
+      ],
+      footerLink: [{
+        name: "Voir le projet",
+        url: "https://www.dropbox.com/scl/fi/9f7xwdlqh3ltptzjhumzp/projet-traitement-des-images2.pdf?rlkey=v55ylo6yjbxx6fj8dndgmpqnd&st=tkv05484&dl=0"
+      }
+    ]
     }
   ],
   display: true // Mettre à false pour masquer cette section

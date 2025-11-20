@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { useStyleContext } from '../contexts/StyleContext';
+import StyleContext from '../contexts/StyleContext';
 import { greeting } from '../portfolio';
 import { Link } from 'react-router-dom';
 import Lottie from 'lottie-react';
@@ -131,7 +131,7 @@ const itemVariants = {
 };
 
 const Home = () => {
-  const { isDark } = useStyleContext();
+  const { isDark } = useContext(StyleContext);
 
   return (
     <HomeContainer id="home" variants={containerVariants} initial="hidden" animate="visible">
