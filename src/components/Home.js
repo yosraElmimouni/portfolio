@@ -131,7 +131,7 @@ const itemVariants = {
 };
 
 const Home = () => {
-  const { isDark } = useContext(StyleContext);
+  const { } = useContext(StyleContext);
 
   return (
     <HomeContainer id="home" variants={containerVariants} initial="hidden" animate="visible">
