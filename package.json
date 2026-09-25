@@ -10,8 +10,7 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write .",
-      "check-format": "prettier --check ."
-
+    "check-format": "prettier --check ."
   },
   "overrides": {
     "rolldown": "1.2.1"

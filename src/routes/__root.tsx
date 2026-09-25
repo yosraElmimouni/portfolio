@@ -78,10 +78,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Yosra El Mimouni — Software Engineer" },
-      { name: "description", content: "Portfolio of Yosra El Mimouni, a full-stack Software Engineer building thoughtful, scalable and modern applications." },
+      {
+        name: "description",
+        content:
+          "Portfolio of Yosra El Mimouni, a full-stack Software Engineer building thoughtful, scalable and modern applications.",
+      },
       { name: "author", content: "Yosra El Mimouni" },
       { property: "og:title", content: "Yosra El Mimouni — Software Engineer" },
-      { property: "og:description", content: "Full-stack engineering, AI-powered applications and thoughtful digital experiences." },
+      {
+        property: "og:description",
+        content:
+          "Full-stack engineering, AI-powered applications and thoughtful digital experiences.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -93,7 +101,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,
