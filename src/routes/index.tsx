@@ -138,7 +138,7 @@ const projects = [
   {
     numeral: "I",
     title: "NewsRoom",
-    context: "Full-stack & mobile engineer · Capgemini, for France Télévisions",
+    context: "Full-stack & mobile engineer · Capgemini Casablanca",
     description:
       "An intelligent newsroom application for journalists, bringing article management, media capture, an editorial agenda, monitoring and an AI assistant into one hybrid mobile and web tool.",
     achievements: [
@@ -209,7 +209,7 @@ const projects = [
   {
     numeral: "IV",
     title: "Vehicle Stock Management, with AMDEC",
-    context: "Graduation project · Full-stack",
+    context: "Project · Full-stack",
     description:
       "A system replacing a manual stock process for a new-and-used vehicle dealership, designed around the AMDEC failure-analysis method.",
     achievements: [
@@ -850,7 +850,7 @@ function Portfolio() {
               <div className="mt-8 flex items-center gap-3">
                 <Button variant="icon" size="icon" asChild>
                   <a
-                    href="https://github.com/"
+                    href="https://github.com/yosraElmimouni"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="GitHub"
@@ -860,7 +860,7 @@ function Portfolio() {
                 </Button>
                 <Button variant="icon" size="icon" asChild>
                   <a
-                    href="https://www.linkedin.com/in/yosra-elmimouni"
+                    href="https://www.linkedin.com/in/yosra-el-mimouni/"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="LinkedIn"
@@ -1126,7 +1126,7 @@ function Portfolio() {
                 Email
               </a>
               <a
-                href="https://www.linkedin.com/in/yosra-elmimouni"
+                href="https://www.linkedin.com/in/yosra-el-mimouni/"
                 target="_blank"
                 rel="noreferrer"
                 className="transition-colors hover:text-foreground"
@@ -1134,7 +1134,7 @@ function Portfolio() {
                 LinkedIn
               </a>
               <a
-                href="https://github.com/"
+                href="https://github.com/yosraElmimouni"
                 target="_blank"
                 rel="noreferrer"
                 className="transition-colors hover:text-foreground"
