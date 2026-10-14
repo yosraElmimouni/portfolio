@@ -53,6 +53,21 @@ import shot23 from "@/assets/projects/tracker-tasks.jpg";
 import shot24 from "@/assets/projects/training-dashboard.jpg";
 import shot25 from "@/assets/projects/training-student-area.jpg";
 import shot26 from "@/assets/projects/training-registration.jpg";
+import shot27 from "@/assets/projects/gfe-login.jpg";
+import shot28 from "@/assets/projects/gfe-dashboard.jpg";
+import shot29 from "@/assets/projects/gfe-invoices.jpg";
+import shot30 from "@/assets/projects/odoo-warranty-list.jpg";
+import shot31 from "@/assets/projects/odoo-warranty-form.jpg";
+import shot32 from "@/assets/projects/odoo-warranty-claim.jpg";
+import shot33 from "@/assets/projects/odoo-warranty-statuses.jpg";
+import shot34 from "@/assets/projects/cicd-pipeline.jpg";
+import shot35 from "@/assets/projects/cicd-runner.jpg";
+import shot36 from "@/assets/projects/cicd-deployed-app.jpg";
+import shot37 from "@/assets/projects/cabinet-home.jpg";
+import shot38 from "@/assets/projects/cabinet-booking.jpg";
+import shot39 from "@/assets/projects/cabinet-admin.jpg";
+import shot40 from "@/assets/projects/cabinet-waiting-room.jpg";
+import shot41 from "@/assets/projects/cabinet-doctor.jpg";
 import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/")({
@@ -67,7 +82,8 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Yosra El Mimouni — Full-Stack Software Engineer" },
       {
         property: "og:description",
-        content: "Ten software projects, professional experience, education and technical skills.",
+        content:
+          "Fourteen software projects, professional experience, education and technical skills.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -367,6 +383,115 @@ const projects = [
     technologies: ["Python", "BeautifulSoup", "FastAPI", "OpenAI API"],
     image: aiDataImage,
     imageAlt: "AI document extraction and summarization pipeline",
+  },
+  {
+    numeral: "XI",
+    title: "GFE — Electronic Invoice Management",
+    context: "Academic project · Full-stack, team of five",
+    description:
+      "A secure web platform to create, track and analyse electronic invoices, replacing paper processes with a traceable, role-based system and a statistics dashboard.",
+    achievements: [
+      "Designed a three-tier architecture: React/Vite frontend, Spring Boot REST API and PostgreSQL, orchestrated with Docker Compose",
+      "Secured the API with Spring Security and stateless JWT authentication, with admin and user roles",
+      "Automated VAT calculation and soft delete to preserve the accounting history",
+      "Produced UML and C4 diagrams and a CI/CD pipeline with GitHub Actions, JUnit, Jest and SonarQube",
+    ],
+    technologies: [
+      "React",
+      "Vite",
+      "Spring Boot",
+      "Spring Security",
+      "JWT",
+      "PostgreSQL",
+      "Docker",
+      "GitHub Actions",
+      "SonarQube",
+    ],
+    screenshots: [
+      { src: shot27, alt: "GFE: secure login page" },
+      { src: shot28, alt: "GFE: dashboard with revenue statistics" },
+      { src: shot29, alt: "GFE: invoice list and management" },
+    ],
+  },
+  {
+    numeral: "XII",
+    title: "Odoo Warranty Management Module",
+    context: "Academic project · ERP, team of three · ENSA Khouribga",
+    description:
+      "A custom Odoo 18 module centralising product warranties and customer claims, with automatic numbering and expiry calculation.",
+    achievements: [
+      "Modelled the warranty object in Python with an automatic sequence (GAR/year/number) and computed expiry dates",
+      "Added SQL and Python constraints, plus a status workflow: draft, valid, claim and expired",
+      "Built list and form views in XML with colour-coded statuses, advanced search, grouping and Excel export",
+      "Integrated with the native Contacts, Products and Sales modules",
+    ],
+    technologies: ["Odoo 18", "Python", "XML", "PostgreSQL", "ERP"],
+    screenshots: [
+      { src: shot30, alt: "Odoo warranty module: warranty list with status badges" },
+      { src: shot31, alt: "Odoo warranty module: draft warranty form" },
+      { src: shot32, alt: "Odoo warranty module: valid warranty with claim action" },
+      { src: shot33, alt: "Odoo warranty module: expired and claimed warranties" },
+    ],
+  },
+  {
+    numeral: "XIII",
+    title: "GitLab CI/CD with a Private Docker Registry",
+    context: "Academic project · DevOps, team of four · ENSA Khouribga",
+    description:
+      "A complete delivery pipeline that builds a Spring Boot application, publishes its image to a self-hosted secured registry and deploys it automatically over SSH.",
+    achievements: [
+      "Set up a GitLab Runner on a VM and a private Docker registry secured with self-signed TLS certificates",
+      "Wrote a four-stage .gitlab-ci.yml: build, test, Docker build and push, deploy",
+      "Managed credentials and SSH keys through protected CI/CD variables",
+      "Diagnosed certificate, SSH, port-conflict and container-log issues to stabilise the deployment",
+    ],
+    technologies: [
+      "GitLab CI/CD",
+      "Docker",
+      "Docker Registry",
+      "Spring Boot",
+      "Maven",
+      "SSH",
+      "Linux",
+    ],
+    screenshots: [
+      { src: shot34, alt: "GitLab CI/CD: successful four-stage pipeline" },
+      { src: shot35, alt: "GitLab CI/CD: runner online with its tags" },
+      { src: shot36, alt: "GitLab CI/CD: application deployed and running" },
+    ],
+  },
+  {
+    numeral: "XIV",
+    title: "MediCare Pro — Medical Practice Management",
+    context: "Academic project · Full-stack, microservices, team of three · ENSA Khouribga",
+    description:
+      "A web application managing patients, appointments, medical records, consultations and billing for medical practices, with dedicated interfaces for the secretary, the doctor and the administrator, plus an online booking flow for patients.",
+    achievements: [
+      "Designed a Spring Boot microservices backend behind an API Gateway, with Eureka service discovery, a Config Server, Zipkin tracing and Swagger-documented REST APIs",
+      "Secured access with Spring Security and JWT, with role-based interfaces built in Angular on PostgreSQL",
+      "Delivered the waiting-room, consultation and appointment workflows, plus notifications and document storage services",
+      "Tested with JUnit, Mockito, Jest, Selenium and JMeter, analysed with SonarQube, and shipped with Docker and a GitHub Actions pipeline",
+    ],
+    technologies: [
+      "Spring Boot",
+      "Spring Cloud",
+      "Angular",
+      "PostgreSQL",
+      "JWT",
+      "Docker",
+      "GitHub Actions",
+      "JUnit",
+      "Selenium",
+      "JMeter",
+      "SonarQube",
+    ],
+    screenshots: [
+      { src: shot37, alt: "MediCare Pro: public home page" },
+      { src: shot38, alt: "MediCare Pro: step-by-step appointment booking" },
+      { src: shot39, alt: "MediCare Pro: administrator dashboard" },
+      { src: shot40, alt: "MediCare Pro: secretary waiting room" },
+      { src: shot41, alt: "MediCare Pro: doctor consultations and finished appointments" },
+    ],
   },
 ] as const;
 
@@ -951,7 +1076,7 @@ function Portfolio() {
             <SectionHeading
               chapter="Chapter Three"
               title="Projects"
-              intro="Ten chapters from internships, a graduation project, and things I built to learn — each one a different problem worth solving."
+              intro="Fourteen chapters from internships, a graduation project, and things I built to learn — each one a different problem worth solving."
             />
             {projects.map((project, index) => (
               <ProjectEntry key={project.title} project={project} index={index} />
